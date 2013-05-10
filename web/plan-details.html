@@ -1,0 +1,174 @@
+<?php $meta_page = 'plan-details';
+$title_block = '';
+$desc_block = '';
+$keywords_block = '';
+include ('includes/doctype.php');  ?>
+<!--ADD ADDITIONAL PAGE-SPECIFIC SCRIPTS HERE-->   
+<script language="javascript">
+jQuery(document).ready(function($) {
+	//ENTER SCRIPTS HERE
+});
+</script>   
+     
+</head>
+<body>
+<div class="container">
+
+    <!--HEADER-->
+    <?php include ('includes/header.php'); ?>
+    <!--/-->
+    
+    <!--LOGIN/LOGOUT-->
+    <?php include ('includes/login.php'); ?>
+    <!--/-->
+    
+    <!--CONTENT-->
+        <div id="content" class="clearfix">
+            <div id="content_left">
+	          	<div id="subnav">  
+	            	<h5>Find a Plan</h5>
+	            	<ul id="sub_findPlan">
+	            		<li><a href="index.html" title="Getting Started">Getting Started</a></li>
+	            		<li class="selected"><a href="plan-options.html" title="View Plan Options">View Plan Options</a></li>
+	            	</ul>
+	          	</div>
+            </div><!--end content left-->
+            <div id="content_right">
+            	<div id="topInsideBar" class="clearfix">
+            		<div class="btn_back"><a href="plan-options.html" class="button">Back to Plan Options</a></div>
+            		<ul id="rightInsideBtns">
+            			<li class="download"><a href="#">Download</a></li>
+            			<li class="email"><a href="#">Email</a></li>
+            			<li class="print no-margin"><a href="#">Print</a></li>
+            		</ul>
+            	</div>
+            	<div id="mainContent">
+		            
+		            <div class="thePlanDetails">
+		            	<div class="optionTop clearfix">
+	            			<div class="planTitle">Plan Name A<br />Plan Type</div>
+	            			<div class="planPremium clearfix">
+	            				<ul class="left">
+	            					<li class="orange">Total Monthly Cost</li>
+	            					<li>Medical Premium</li>
+	            					<li>Dental Premium (-)</li>
+	            				</ul>
+	            				<ul class="right">
+	            					<li class="orange">$217</li>
+	            					<li>$166</li>
+	            					<li>$51</li>
+	            				</ul>
+	            			</div>
+            			</div>
+			            <table class="myPlanDetails" cellpadding="0" cellspacing="0">
+			            	<tr>
+			            		<th colspan="3">Plan Details</th>
+			            	</tr>
+			            	<tr>
+				            	<td width="30%">Deductible</td>
+				            	<td width="20%">$1500</td>
+				            	<td width="50%">Line to explain more</td>
+			            	</tr>
+			            	<tr>
+				            	<td>Coinsurance</td>
+				            	<td>0%</td>
+				            	<td>Line to explain further</td>
+			            	</tr>
+			            	<tr>
+				            	<td>Copay PCP</td>
+				            	<td>$30</td>
+				            	<td>Line to explain more</td>
+			            	</tr>
+			            	<tr>
+				            	<td>Copay Specialist</td>
+				            	<td>$40</td>
+				            	<td>Line to explain further</td>
+			            	</tr>
+			            </table>
+			            <table class="myPlanDetails" cellpadding="0" cellspacing="0">
+			            	<tr>
+			            		<th colspan="3">RX Plan Details</th>
+			            	</tr>
+			            	<tr>
+				            	<td width="30%">Prescription Deductible</td>
+				            	<td width="20%">$500</td>
+				            	<td width="50%">Individual; Applies to Brand, Non-Formulary</td>
+			            	</tr>
+			            	<tr>
+				            	<td colspan="3">Prescription Drugs</td>
+			            	</tr>
+			            	<tr>
+				            	<td class="indent">Generic</td>
+				            	<td>$15</td>
+				            	<td>Copay deductible waived</td>
+			            	</tr>
+			            	<tr>
+				            	<td class="indent">Brand</td>
+				            	<td>$35</td>
+				            	<td>Copay after deductible</td>
+			            	</tr>
+			            	<tr>
+				            	<td colspan="3">Annual Out-of-Pocket Limit</td>
+			            	</tr>
+			            	<tr>
+				            	<td class="indent">Family</td>
+				            	<td>$10,000</td>
+				            	<td>$5,000 per person. Includes deductible</td>
+			            	</tr>
+			            	<tr>
+				            	<td>Lifetime Maximum</td>
+				            	<td>Unlimited</td>
+				            	<td>&nbsp;</td>
+			            	</tr>
+			            	<tr>
+				            	<td>Out-of-Network Coverage</td>
+				            	<td>&nbsp;</td>
+				            	<td>Yes</td>
+			            	</tr>
+			            </table>
+		            </div>
+		            
+		             <div class="thePlanDetails dental">
+		            	<div class="optionTop clearfix">
+	            			<div class="planTitle">Dental Plan Name A</div>
+	            			<div class="planPremium clearfix">
+	            				<ul class="left">
+	            					<li class="blue">Dental Premium</li>
+	            				</ul>
+	            				<ul class="right">
+	            					<li class="blue">$51</li>
+	            				</ul>
+	            			</div>
+            			</div>
+			            <table class="myPlanDetails" cellpadding="0" cellspacing="0">
+			            	<tr>
+			            		<th colspan="3">Plan Details</th>
+			            	</tr>
+			            	<tr>
+				            	<td width="50%">Teeth Cleanings</td>
+				            	<td width="50%">No Charge</td>
+			            	</tr>
+			            	<tr>
+				            	<td>Restorative Dentistry/Fillings</td>
+				            	<td>No Charge after deductible</td>
+			            	</tr>
+			            	<tr>
+				            	<td>Oral Surgery</td>
+				            	<td>Not Covered (discount applies)</td>
+			            	</tr>
+			            </table>
+		            </div>
+		            
+            	</div><!-- end main content -->
+            </div><!--end content right-->   
+        </div><!--END content-->
+    <!--/-->
+    
+    
+    
+    <!--FOOTER--> 
+    <?php include ('includes/footer.php'); ?>
+    <!--/-->
+   
+</body>
+</html>

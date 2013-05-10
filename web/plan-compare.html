@@ -1,0 +1,240 @@
+<?php $meta_page = 'plan-compare';
+$title_block = '';
+$desc_block = '';
+$keywords_block = '';
+include ('includes/doctype.php');  ?>
+<!--ADD ADDITIONAL PAGE-SPECIFIC SCRIPTS HERE-->   
+<script language="javascript">
+jQuery(document).ready(function($) {
+	//ENTER SCRIPTS HERE
+});
+</script>   
+     
+</head>
+<body>
+<div class="container">
+
+    <!--HEADER-->
+    <?php include ('includes/header.php'); ?>
+    <!--/-->
+    
+    <!--LOGIN/LOGOUT-->
+    <?php include ('includes/login.php'); ?>
+    <!--/-->
+    
+    <!--CONTENT-->
+        <div id="content" class="clearfix">
+            <div id="content_left">
+	          	<div id="subnav">  
+	            	<h5>Find a Plan</h5>
+	            	<ul id="sub_findPlan">
+	            		<li><a href="index.html" title="Getting Started">Getting Started</a></li>
+	            		<li class="selected"><a href="plan-options.html" title="View Plan Options">View Plan Options</a></li>
+	            	</ul>
+	          	</div>
+            </div><!--end content left-->
+            <div id="content_right">
+            	<div id="topInsideBar" class="clearfix">
+            		<div class="btn_back"><a href="plan-options.html" class="button">Back to Plan Options</a></div>
+            		<div class="topPagination">
+            			<ul>
+            				<li class="totalPlans">12 Plans</li>
+            				<li><a href="#">&lt;</a></li>
+            				<li><a href="#">1</a></li>
+            				<li><a href="#">2</a></li>
+            				<li><a href="#">3</a></li>
+            				<li><a href="#">&gt;</a></li>
+            			</ul>
+            		</div>
+            		<ul id="rightInsideBtns">
+            			<li class="print"><a href="#">Print</a></li>
+            		</ul>
+            	</div>
+            	<div id="mainContent">
+		            
+		            <ul id="planCompare">
+		            	<li class="clearfix">
+		            			<div class="optionTop clearfix">
+			            			<div class="planTitle">Plan Name A<br />Plan Type</div>
+			            			<div class="planPremium clearfix">
+			            				<ul class="left">
+			            					<li class="orange">Total Monthly Cost</li>
+			            					<li>Medical Premium</li>
+			            					<li>Dental Premium (-)</li>
+			            				</ul>
+			            				<ul class="right">
+			            					<li class="orange">$217</li>
+			            					<li>$166</li>
+			            					<li>$51</li>
+			            				</ul>
+			            			</div>
+			            			<ul class="planOptionsButtons clearfix">
+			            				<li><a href="#" title="Favorite"><img src="images/icon_compareFavorite.png" /></a></li>
+			            				<li><a href="#" title="Edit"><img src="images/icon_compareEdit.png" /></a></li>
+			            				<li><a href="#" title="Audio"><img src="images/icon_compareAudio.png" /></a></li>
+			            				<li><a href="#" title="Select Plan"><img src="images/icon_compareSelectPlan.png" /></a></li>
+			            			</ul>
+		            			</div>
+		            			<div class="optionDeductible clearfix">
+	            					<ul class="left">
+		            					<li>Deductible</li>
+		            					<li>Coinsurance</li>
+		            					<li>Copay PCP</li>
+		            					<li>Copay Specialist</li>
+		            					<li>Annula Deductible</li>
+		            				</ul>
+		            				<ul class="right">
+		            					<li>$1500</li>
+		            					<li>0%</li>
+		            					<li>$30</li>
+		            					<li>$40</li>
+		            					<li>$2500</li>
+		            				</ul>
+		            			</div>
+		            			<div class="optionOutofPocket clearfix">
+	            					<ul class="left">
+		            					<li>Annual Out of Pocket Limit</li>
+		            					<li>Lifetime Maximum</li>
+		            				</ul>
+		            				<ul class="right">
+		            					<li>$5000</li>
+		            					<li>Unlimited</li>
+		            				</ul>
+		            			</div>
+		            			<div class="optionAbout">
+		            				<h6>About the Plan</h6>
+		            				<p>Short Plan description here or benefits in plain english for the average person who may not be savvy as to insurance products.</p>
+		            			</div>
+		            			
+		            	</li>
+		            	
+		            	<li class="clearfix">
+		            			<div class="optionTop clearfix">
+			            			<div class="planTitle">Plan Name A<br />Plan Type</div>
+			            			<div class="planPremium clearfix">
+			            				<ul class="left">
+			            					<li class="orange">Total Monthly Cost</li>
+			            					<li>Medical Premium</li>
+			            					<li>Dental Premium (-)</li>
+			            				</ul>
+			            				<ul class="right">
+			            					<li class="orange">$217</li>
+			            					<li>$166</li>
+			            					<li>$51</li>
+			            				</ul>
+			            			</div>
+			            			<ul class="planOptionsButtons clearfix">
+			            				<li><a href="#" title="Favorite"><img src="images/icon_compareFavorite.png" /></a></li>
+			            				<li><a href="#" title="Edit"><img src="images/icon_compareEdit.png" /></a></li>
+			            				<li><a href="#" title="Audio"><img src="images/icon_compareAudio.png" /></a></li>
+			            				<li><a href="#" title="Select Plan"><img src="images/icon_compareSelectPlan.png" /></a></li>
+			            			</ul>
+		            			</div>
+		            			<div class="optionDeductible clearfix">
+	            					<ul class="left">
+		            					<li>Deductible</li>
+		            					<li>Coinsurance</li>
+		            					<li>Copay PCP</li>
+		            					<li>Copay Specialist</li>
+		            					<li>Annula Deductible</li>
+		            				</ul>
+		            				<ul class="right">
+		            					<li>$1500</li>
+		            					<li>0%</li>
+		            					<li>$30</li>
+		            					<li>$40</li>
+		            					<li>$2500</li>
+		            				</ul>
+		            			</div>
+		            			<div class="optionOutofPocket clearfix">
+	            					<ul class="left">
+		            					<li>Annual Out of Pocket Limit</li>
+		            					<li>Lifetime Maximum</li>
+		            				</ul>
+		            				<ul class="right">
+		            					<li>$5000</li>
+		            					<li>Unlimited</li>
+		            				</ul>
+		            			</div>
+		            			<div class="optionAbout">
+		            				<h6>About the Plan</h6>
+		            				<p>Short Plan description here or benefits in plain english for the average person who may not be savvy as to insurance products.</p>
+		            			</div>
+		            			
+		            	</li>
+		            	
+		            	<li class="clearfix">
+		            			<div class="optionTop clearfix">
+			            			<div class="planTitle">Plan Name A<br />Plan Type</div>
+			            			<div class="planPremium clearfix">
+			            				<ul class="left">
+			            					<li class="orange">Total Monthly Cost</li>
+			            					<li>Medical Premium</li>
+			            					<li>Dental Premium (-)</li>
+			            				</ul>
+			            				<ul class="right">
+			            					<li class="orange">$217</li>
+			            					<li>$166</li>
+			            					<li>$51</li>
+			            				</ul>
+			            			</div>
+			            			<ul class="planOptionsButtons clearfix">
+			            				<li><a href="#" title="Favorite"><img src="images/icon_compareFavorite.png" /></a></li>
+			            				<li><a href="#" title="Edit"><img src="images/icon_compareEdit.png" /></a></li>
+			            				<li><a href="#" title="Audio"><img src="images/icon_compareAudio.png" /></a></li>
+			            				<li><a href="#" title="Select Plan"><img src="images/icon_compareSelectPlan.png" /></a></li>
+			            			</ul>
+		            			</div>
+		            			<div class="optionDeductible clearfix">
+	            					<ul class="left">
+		            					<li>Deductible</li>
+		            					<li>Coinsurance</li>
+		            					<li>Copay PCP</li>
+		            					<li>Copay Specialist</li>
+		            					<li>Annula Deductible</li>
+		            				</ul>
+		            				<ul class="right">
+		            					<li>$1500</li>
+		            					<li>0%</li>
+		            					<li>$30</li>
+		            					<li>$40</li>
+		            					<li>$2500</li>
+		            				</ul>
+		            			</div>
+		            			<div class="optionOutofPocket clearfix">
+	            					<ul class="left">
+		            					<li>Annual Out of Pocket Limit</li>
+		            					<li>Lifetime Maximum</li>
+		            				</ul>
+		            				<ul class="right">
+		            					<li>$5000</li>
+		            					<li>Unlimited</li>
+		            				</ul>
+		            			</div>
+		            			<div class="optionAbout">
+		            				<h6>About the Plan</h6>
+		            				<p>Short Plan description here or benefits in plain english for the average person who may not be savvy as to insurance products.</p>
+		            			</div>
+		            			
+		            	</li>
+		            	
+		            </ul>
+		            
+		            <ul id="mainButtons" class="clearfix">
+		            	<li class="larrow"><a href="#" class="button">&#10094; Go Back</a></li>
+		            	<li class="last right"><a href="#" class="button">View My Plan Selections</a></li>
+		            </ul>
+		            
+            	</div><!-- end main content -->
+            </div><!--end content right-->   
+        </div><!--END content-->
+    <!--/-->
+    
+    
+    
+    <!--FOOTER--> 
+    <?php include ('includes/footer.php'); ?>
+    <!--/-->
+   
+</body>
+</html>

@@ -1,0 +1,73 @@
+# DEFAULT SETTINGS
+##############################################
+Options +ExecCGI -Indexes
+
+ServerSignature Off
+AddType image/x-icon .ico
+AddDefaultCharset UTF-8
+DefaultLanguage en-US
+SetEnv TZ America/Chicago
+SetEnv SERVER_ADMIN info@ocean19.com
+
+# DISABLE DIRECTORY BROWSING
+##############################################
+Options All -Indexes
+
+# DISALLOW VIEW OF HTACCESS
+##############################################
+<Files .htaccess>
+ order allow,deny
+ deny from all
+</Files>
+
+# START REWRITE ENGINE
+##############################################
+Options +FollowSymlinks
+RewriteEngine on
+
+# PERMANENT DOMAIN REDIRECT
+# REDIRECT TO WWWW
+##############################################
+# RewriteCond %{HTTP_HOST} ^domain.com [nc]
+# RewriteRule ^(.*)$ http://www.domain.com/$1 [r=301,nc] 
+
+# PERMANENT DOMAIN REDIRECT
+# REDIRECT TO NON WWWW
+##############################################
+RewriteCond %{HTTP_HOST} ^www\.(.*) [nc]
+RewriteRule ^(.*)$ http://%1/$1 [r=301,nc,l]
+
+RewriteCond %{HTTP_HOST} ^whosmatt.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www.whosmatt.com$
+RewriteRule ^/?(.*)$ "http\:\/\/whoismattmoreno\.com\/$1" [R=301,L]
+
+# DEFAULT FILE HANDLER
+##############################################
+# AddType application/x-httpd-php .html .htm
+# AddHandler application/x-httpd-php .html .htm
+AddHandler php-script .html .htm
+
+# ERROR PAGES
+##############################################
+ErrorDocument 400 not-found.php
+ErrorDocument 401 not-found.php
+ErrorDocument 403 not-found.php
+ErrorDocument 404 not-found.php
+ErrorDocument 500 not-found.php
+
+<FilesMatch ".(html|htm)$">
+SetHandler php4-script
+</FilesMatch>
+
+# DirectoryIndex comingsoon.html
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress

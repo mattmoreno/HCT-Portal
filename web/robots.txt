@@ -1,0 +1,10 @@
+User-agent: *
+Disallow:
+Crawl-delay: 60
+
+Disallow: /cgi-bin/
+Disallow: wp-includes/
+Disallow: wp-content/
+Disallow: wp-admin/
+
+Sitemap: http://website.com/sitemap.xml

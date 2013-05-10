@@ -1,0 +1,195 @@
+<?php $meta_page = 'index';
+$title_block = '';
+$desc_block = '';
+$keywords_block = '';
+include ('includes/doctype.php');  ?>
+<!--ADD ADDITIONAL PAGE-SPECIFIC SCRIPTS HERE-->   
+<script language="javascript">
+jQuery(document).ready(function($) {
+	//ENTER SCRIPTS HERE
+	$(".formhalf").hover(
+	  function () {
+	    $(this).find(".tooltip:first").css("display", "block");
+	  },
+	  function () {
+	    $(this).find(".tooltip:first").css("display", "none");
+	  }
+	);	
+	
+});
+</script>   
+     
+</head>
+<body>
+<div class="container">
+
+    <!--HEADER-->
+    <?php include ('includes/header.php'); ?>
+    <!--/-->
+    
+    <!--LOGIN/LOGOUT-->
+    <?php include ('includes/login.php'); ?>
+    <!--/-->
+    
+    <!--CONTENT-->
+        <div id="content" class="clearfix">
+            <div id="content_left">
+	          	<div id="subnav">  
+	            	<h5>Find a Plan</h5>
+	            	<ul id="sub_findPlan">
+	            		<li class="selected"><a href="index.html" title="Getting Started">Getting Started</a></li>
+	            		<li><a href="plan-options.html" title="View Plan Options">View Plan Options</a></li>
+	            	</ul>
+	          	</div>
+            </div><!--end content left-->
+            <div id="content_right">
+            	<div id="topInsideBar" class="clearfix hidden">
+            		&nbsp;
+            	</div>
+            	
+            	<div id="topInsideBarError" class="clearfix">
+            		Please enter your zip code
+            	</div>
+            	<div id="mainContent">
+	            	<h3>Give us the basics to find your plan options.</h3>
+		            <small class="right">Required<span class="required">*</span></small>
+		            
+		            <div id="getStarted" action="#">
+		            	<fieldset> 
+			            	<legend>Coverage location and start date</legend>
+			            	
+			            	<div class="row">
+			            		<div class="formhalf">
+									<label for="regularInput">Zip Code<span class="required">*</span></label>
+									<input type="text" id="zipcode" />
+									<div class="error">Please enter a valid zip code</div>
+			            		</div>
+			            		<div class="formhalf">
+									<label for="regularInput">Start Coverage On<span class="required">*</span></label>
+									<input type="text" id="startcoverage" />
+			            		</div>
+							</div>
+		            	</fieldset>
+		            	
+		            	<fieldset> 
+			            	<legend>Please enter who needs coverage in your household.</legend>
+			            	
+			            	<div class="row">
+			            		<div class="formhalf">
+									<label for="subscriber">Subscriber<span class="required">*</span></label>
+									<input type="text" id="subscriber" />
+			            		</div>
+			            		<div class="formhalf">
+									<label for="dob">Date of Birth<span class="required">*</span></label>
+									<input type="text" id="dob" />
+									<!--BEGIN TOOLTIP-->
+									<div class="tooltip">
+										<h4>Reminder</h4>
+										<p>Dependent children over age 26 are not eligible for this coverage unless they have a disability. Proof of disabled status will be required before coverage becomes effective.</p>
+										<div class="yesno">
+											<fieldset>
+											    <label class="question" for="">Is this child disabled?</label>
+											    <label class="option" for="regularRadio">
+											      <input type="radio" name="radios" id="regularRadio" value="Yes" />
+											      <span>Yes</span>
+											    </label>
+											    <label class="option" for="secondRegularRadio">
+											      <input type="radio" name="radios" id="secondRegularRadio" value="No" />
+											      <span>No</span>
+											    </label>
+											 </fieldset>
+										</div>									  
+									</div>
+									<!--END TOOLTIP-->
+			            		</div>
+							</div>
+							
+							<div class="row">
+			            		<div class="formhalf">
+									<label for="selectList">Spouse</label>
+									<select id="selectList">
+										<option value="Option 1">No</option>
+										<option value="Option 2">Yes</option>
+									</select>
+			            		</div>
+			            		<div class="formhalf">
+									<label for="dob">Date of Birth<span class="required">*</span></label>
+									<input type="text" id="dob" />
+									<!--BEGIN TOOLTIP-->
+									<div class="tooltip">
+										<h4>Reminder</h4>
+										<p>Dependent children over age 26 are not eligible for this coverage unless they have a disability. Proof of disabled status will be required before coverage becomes effective.</p>
+										<div class="yesno">
+											<fieldset>
+											    <label class="question" for="">Is this child disabled?</label>
+											    <label class="option" for="regularRadio">
+											      <input type="radio" name="radios" id="regularRadio" value="Yes" />
+											      <span>Yes</span>
+											    </label>
+											    <label class="option" for="secondRegularRadio">
+											      <input type="radio" name="radios" id="secondRegularRadio" value="No" />
+											      <span>No</span>
+											    </label>
+											 </fieldset>
+										</div>									  
+									</div>
+									<!--END TOOLTIP-->
+			            		</div>
+							</div>
+							
+							<div class="row">
+			            		<div class="formhalf">
+									<label for="dependent01
+									">Dependent Child 1<span class="required">*</span></label>
+									<input type="text" id="dependent01" />
+			            		</div>
+			            		<div class="formhalf">
+									<label for="dob">Date of Birth<span class="required">*</span></label>
+									<input type="text" id="dob" />
+									<!--BEGIN TOOLTIP-->
+									<div class="tooltip">
+										<h4>Reminder</h4>
+										<p>Dependent children over age 26 are not eligible for this coverage unless they have a disability. Proof of disabled status will be required before coverage becomes effective.</p>
+										<div class="yesno">
+											<fieldset>
+											    <label class="question" for="">Is this child disabled?</label>
+											    <label class="option" for="regularRadio">
+											      <input type="radio" name="radios" id="regularRadio" value="Yes" />
+											      <span>Yes</span>
+											    </label>
+											    <label class="option" for="secondRegularRadio">
+											      <input type="radio" name="radios" id="secondRegularRadio" value="No" />
+											      <span>No</span>
+											    </label>
+											 </fieldset>
+										</div>									  
+									</div>
+									<!--END TOOLTIP-->
+			            		</div>
+							</div>
+							
+							<div class="addMoreChildren"><a href="#">+ Add More Dependent Children</a></div>
+							 
+		            	</fieldset>
+
+ 
+		            </div>
+		            
+		            <ul id="mainButtons" class="clearfix">
+		            	<li class="larrow"><a href="#" class="button">Go Back</a></li>
+		            	<li class="rarrow last right"><a href="#" class="button">Next</a></li>
+		            </ul>
+		            
+            	</div><!-- end main content -->
+            </div><!--end content right-->   
+        </div><!--END content-->
+    <!--/-->
+    
+    
+    
+    <!--FOOTER--> 
+    <?php include ('includes/footer.php'); ?>
+    <!--/-->
+   
+</body>
+</html>

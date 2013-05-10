@@ -1,0 +1,325 @@
+/* MAIN STYLES
+----------------------------------- */
+.container {
+  text-align: left;
+  position: relative;
+  padding: 0;
+  margin: 0 auto;  
+  width:958px;
+  border:solid 1px #cbcdcf;
+  background:#f5f4f4;
+}
+
+
+/* Clearing
+----------------------------------- */
+
+/* Self Clearing Goodness */
+.container:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+
+/* Use clearfix class on parent to clear nested columns,
+or wrap each row of columns in a <div class="row"> */
+.clearfix:before,
+.clearfix:after,
+.row:before,
+.row:after {
+  content: '\0020';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0; }
+.row:after,
+.clearfix:after {
+  clear: both; }
+.row,
+.clearfix {
+  zoom: 1; }
+
+/* You can also use a <br class="clear" /> to clear columns */
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+
+
+/* HEADER
+----------------------------------- */
+#head_wrap{ height:73px; padding:1px 0 0; background:#fff; }
+#logo{ float:left; width:138px; height:73px; }
+
+
+/* NAVIGATION
+----------------------------------- */
+ul#nav{ float:right; display:block; height: 73px; width:820px; margin:0; }
+ul#nav li{ float:left; list-style-type:none; text-align:center; height:73px; margin:0; }
+ul#nav li a  { display:block; text-decoration: none; }
+ul#nav li a:hover{ display:block; color:#000; }
+
+#btn_findPlan{ background:#c7d2d5; width:189px; line-height:73px; text-transform: uppercase; }
+#btn_findPlan a{ background:#c7d2d5;}
+#btn_findPlan a:hover{ background:#d2dcdf; }
+
+#btn_applyCoverage{ background:#cddceb; width:207px; line-height:73px; text-transform: uppercase; }
+#btn_applyCoverage a{ background:#cddceb;}
+#btn_applyCoverage a:hover{ background:#d8e5f2; }
+
+#btn_findSubsidy{ background:#e7e6e7; width:202px; line-height:73px; text-transform: uppercase; }
+#btn_findSubsidy a{ background:#e7e6e7;}
+#btn_findSubsidy a:hover{ background:#eeeeee; }
+
+#btn_getAssistance{ background:#fde4d1; width:222px; height:38px !important; line-height:38px; text-transform: uppercase; }
+#btn_getAssistance a{ background:#fde4d1;}
+#btn_getAssistance a:hover{ background:#ffefe3; }
+
+#btn_learnMore{ background:#f9d1b1; width:222px; height:35px !important; line-height:35px; text-transform: uppercase; }
+#btn_learnMore a{ background:#f9d1b1;}
+#btn_learnMore a:hover{ background:#fcdcc4; }
+
+
+/* LOGIN
+----------------------------------- */
+#login_wrap{ background:#231f20; color:#fff; font-size:10px; height:44px; overflow:hidden; /*width:964px; position: relative; left:-3px;*/ }
+#login_wrap a { color:#fff; text-decoration: none; }
+#login_wrap div, #login_wrap ul { float:left; margin:0; }
+#login_wrap ul li { float:left; margin:0; }
+
+#login_name { font-size:12px; width:172px; padding:12px 25px; }
+#login_wrap ul#loginLogout { width:203px; padding:12px 0 12px 33px; margin-right:67px; }
+	#login_wrap ul#loginLogout li { margin-right:18px; }
+	li#btn_save { background:url(../images/btn_save.gif) no-repeat; width:52px; height:23px; text-indent: -9999px; display:block; position:relative; top:-3px; }
+	li#btn_save a { display:block; width:52px; height:23px; }
+#login_wrap ul#planCompare { width:128px; padding:12px 0 12px 10px; border-left:solid 1px #fff; }
+	#login_wrap ul#planCompare li { margin-right:5px; }
+	li#btn_heart { background:url(../images/icon_heart.gif) no-repeat; width:18px; height:15px; text-indent: -9999px; display:block; position:relative; top:1px; }
+	li#btn_heart a { display:block; width:18px; height:15px; }
+	li#btn_num { background:#353b41; padding:1px 5px; text-align:center; -webkit-border-radius: 3px; border-radius: 3px; position:relative; top:-1px; }
+#login_wrap ul#planSelections { width:128px; padding:12px 0 12px 10px; border-left:solid 1px #fff; }
+	#login_wrap ul#planSelections li { margin-right:5px; }
+	li#btn_cart { background:url(../images/icon_cart.gif) no-repeat; width:18px; height:17px; text-indent: -9999px; display:block; position:relative; top:0; }
+	li#btn_cart a { display:block; width:18px; height:15px; }
+#login_wrap ul#planIcons { width:92px; padding:12px 0 12px 10px; border-left:solid 1px #fff; }
+	#login_wrap ul#planIcons li { margin-right:10px; }
+	li#btn_steth { background:url(../images/icon_steth.gif) no-repeat; width:21px; height:18px; text-indent: -9999px; display:block; position:relative; top:0; }
+	li#btn_steth a { display:block; width:21px; height:18px; }
+	li#btn_home { background:url(../images/icon_home.gif) no-repeat; width:22px; height:18px; text-indent: -9999px; display:block; position:relative; top:1px; }
+	li#btn_home a { display:block; width:22px; height:18px; }
+	li#btn_lang { background:url(../images/icon_lang.gif) no-repeat; width:17px; height:17px; text-indent: -9999px; display:block; position:relative; top:2px; }
+	li#btn_lang a { display:block; width:17px; height:17px; }
+#planHelp { padding:15px; border-left:solid 1px #fff; background:url(../images/icon_help.gif) no-repeat center center; width:20px; height:20px; text-indent:-9999px;  }
+	#planHelp a { display:block; width:20px; height:20px; }
+
+
+/* CONTENT STYLES
+----------------------------------- */
+#content{ width:100%; }
+#content_left{ float:left; height:auto; position:relative; width:222px; background:#e5e5e5; padding:20px 0;  }
+#content_right{ height:auto; float:right; position:relative; width:735px; -webkit-box-shadow: -5px 0px 10px rgba(169, 171, 173, 0.75); -moz-box-shadow: -5px 0px 10px rgba(169, 171, 173, 0.75); box-shadow: -5px 0px 10px rgba(169, 171, 173, 0.75);}
+#mainContent { padding:25px; }
+
+#subnav {  }
+#subnav a { text-decoration:none; }
+#subnav h5 { font-family: 'Oxygen', sans-serif; padding:0 0 15px 30px; }
+ul#sub_findPlan { margin:0; font-size:13px; }
+ul#sub_findPlan li { border-top:solid 1px #bcbdc0; margin:0; display:block; text-transform: lowercase; }
+ul#sub_findPlan li a { padding:20px 0 20px 30px; display:block; color:#4d4d4f; }
+ul#sub_findPlan li a:hover, ul#sub_findPlan li.selected a { background:url(../images/subnav_arrow.gif) no-repeat -1px center #7aabd0; border-left:solid 5px #a7c5df; color:#fff; padding-left:25px; }
+
+#topInsideBar { padding:12px; background:#cfd0d1; font-size:10px; }
+#topInsideBar p { margin:0; }
+.btn_back .button { background: #f79a67;
+background: -moz-linear-gradient(top, #f79a67 0%, #f79a67 42%, #f47721 48%, #f47721 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f79a67), color-stop(42%,#f79a67), color-stop(48%,#f47721), color-stop(100%,#f47721));
+background: -webkit-linear-gradient(top, #f79a67 0%,#f79a67 42%,#f47721 48%,#f47721 100%);
+background: -o-linear-gradient(top, #f79a67 0%,#f79a67 42%,#f47721 48%,#f47721 100%);
+background: -ms-linear-gradient(top, #f79a67 0%,#f79a67 42%,#f47721 48%,#f47721 100%);
+background: linear-gradient(to bottom, #f79a67 0%,#f79a67 42%,#f47721 48%,#f47721 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f79a67', endColorstr='#f47721',GradientType=0 );
+border:none; margin:0; color:#4d4d4f; padding:5px 10px; float:left;
+}
+#topInsideBar p.selectedPlan { float:right; margin-right:30px; }
+
+.topPagination ul { float:left; margin:2px 0 0 25px; }
+.topPagination ul li { float:left; margin:0; }
+.topPagination ul li a { text-decoration:none; padding:3px 5px; }
+.topPagination ul li a:hover { background:#353b41; -webkit-border-radius: 3px; border-radius: 3px; color:#e5e4e4; }
+.topPagination ul li.totalPlans { margin:0 15px 0 0; font-weight:700; }
+
+ul#rightInsideBtns { float:right; margin:0 20px 0 0; }
+ul#rightInsideBtns li { float:left; margin:0 0 0 20px; /*padding:2px 10px;*/ border:solid 1px #7b7c80; -webkit-border-radius: 4px; border-radius: 4px; display:block; line-height:0; }
+ul#rightInsideBtns li a { display:block; text-decoration:none; padding:10px; }
+li.sort { width:100px; background:url(../images/icon_gray_arrowDown.gif) no-repeat 85px 7px; }
+	li.sort a { width:100px; }
+li.print { width:30px; background:url(../images/icon_gray_print.gif) no-repeat 7px 4px; text-indent:-9999px; }
+	li.print a { width:30px; }
+li.download{ width:80px; background:url(../images/icon_gray_download.gif) no-repeat 62px 4px; margin:0 !important; }
+	li.download a { width:80px; }
+li.email{ width:63px; background:url(../images/icon_gray_email.gif) no-repeat 41px 5px; margin:0 !important; }
+	li.email a { width:63px; }
+
+
+
+/* GETTING STARTED (getting-started.html)
+----------------------------------- */
+form#getStarted { width:100%; }
+form#getStarted fieldset { margin-bottom:30px; }
+form#getStarted legend { background:#7aabd0; color:#fff; font-size:12px; padding:7px 10px; width:665px; margin:0 0 20px; font-weight: normal; }
+form#getStarted .row { border-top:dashed 1px #b9b4b1; padding:5px 0; }
+form#getStarted label { text-transform: uppercase; font-size:10px; }
+form#getStarted .formhalf { float:left; width:200px; }
+form#getStarted input, form#getStarted textarea, form#getStarted select { width:150px; margin:0 0 5px; }
+form#getStarted .addMoreChildren { text-transform: uppercase; font-size:10px; }
+form#getStarted .addMoreChildren a { color:#4d4d4f; }
+
+
+/* PLAN OPTIONS (plan-options.html)
+----------------------------------- */
+.blueHeader { background:#7aabd0; color:#fff; font-size:12px; padding:7px; width:665px; margin:0 0 20px; }
+#mainContent ul#planOptions { margin:0 0 30px; text-transform: uppercase; font-size:10px; }
+#mainContent ul#planOptions li { padding:20px; border-bottom:dashed 1px #b9b4b1; margin:0; }
+#mainContent ul#planOptions li.alt { background:#fff; }
+#mainContent ul#planOptions * li { border-bottom:none; }
+#mainContent ul#planOptions li .optionTop { margin:0 0 10px; }
+#mainContent ul#planOptions li .optionLeft { float:left;}
+#mainContent ul#planOptions li .optionRight { float:right; border-left:dashed 1px #b9b4b1; width:97px; padding:0 0 0 15px;}
+
+
+#mainContent ul#planOptions li .planTitle { font-size:18px; float:left; width:215px; text-transform: none; line-height:1.4; margin:0 30px 0 0; }
+#mainContent ul#planOptions li .planPrice { float:left; width:65px; color:#e08130; text-align: center; position: relative; top:5px; margin:0 15px 0 0; font-size:10px; }
+	#mainContent ul#planOptions li .planPrice big { font-size:26px; }
+#mainContent ul#planOptions li .planPremium { float:left; width:190px; padding:0 0 0 15px; border-left:dashed 1px #b9b4b1; font-size:12px; }
+	#mainContent ul#planOptions li .planPremium ul { margin:0 20px 0 0; float:left; }
+	#mainContent ul#planOptions li .planPremium ul li { margin:0; padding:0; }
+
+#mainContent ul#planOptions li .optionRight ul { margin:0; }
+#mainContent ul#planOptions li .optionRight ul li { margin:0; padding:0; }
+
+/* PLAN COMPARE (plan-compare.html)
+----------------------------------- */
+
+#mainContent ul#planCompare { margin:0 0 30px; float:left; font-size:10px; }
+#mainContent ul#planCompare li { border-left:dashed 1px #b9b4b1; margin:0; float:left; width:227px; }
+#mainContent ul#planCompare * li { border-left:none; float:none; width:inherit; }
+#mainContent ul#planCompare li .optionTop, #mainContent ul#planCompare li .optionDeductible, #mainContent ul#planCompare li .optionOutofPocket, #mainContent ul#planCompare li .optionAbout { padding:10px; border-bottom:dashed 1px #b9b4b1; }
+	#mainContent ul#planCompare li .optionDeductible { background:#fbebe0; }
+	#mainContent ul#planCompare li .optionAbout p { margin:0; line-height:1.6; }
+
+#mainContent ul#planCompare li .planTitle { font-size:18px; text-transform: none; line-height:1.4; margin:0 0 10px; }
+#mainContent ul#planCompare li .planPremium { font-size:12px; text-transform: uppercase; }
+	#mainContent ul#planCompare li .planPremium ul, 
+	#mainContent ul#planCompare li .optionDeductible ul, 
+	#mainContent ul#planCompare li .optionOutofPocket ul { margin:0; }
+	
+	#mainContent ul#planCompare li .planPremium ul li, 
+	#mainContent ul#planCompare li .optionDeductible ul li, 
+	#mainContent ul#planCompare li .optionOutofPocket ul li { margin:0; padding:0; }
+		#mainContent ul#planCompare li .planPremium ul.right, #mainContent ul#planCompare li .optionDeductible ul.right, #mainContent ul#planCompare li .optionOutofPocket ul.right { text-align:right; }
+	#mainContent ul#planCompare li ul.planOptionsButtons { margin:15px 0 0; }
+	#mainContent ul#planCompare li ul.planOptionsButtons li { float:left; margin:0 5px 0 0; }
+	#mainContent ul#planCompare li .optionAbout h6 { text-transform: uppercase; font-family: "Avenir Medium", Helvetica, Arial, sans-serif; font-size:12px; }
+	#mainContent ul#planCompare li .optionAbout p { margin:0; }
+
+
+/* PLAN DETAILS (plan-details.html)
+----------------------------------- */
+.thePlanDetails { margin:0 0 10px; }
+
+table.myPlanDetails { width:100%; text-align:left; font-size:12px; border:dotted 1px #9fa0a3; border-top:none;  }
+table.myPlanDetails tr { }
+table.myPlanDetails th { background:#f9cfaf; color:#fff; font-size:11px; text-transform: uppercase; font-weight: 700; padding:0 10px; }
+table.myPlanDetails td { padding:6px 10px 0; }
+table.myPlanDetails td.indent { padding-left:30px; }
+
+.thePlanDetails .optionTop { padding:10px; background:#fbebe0; border:dotted 1px #9fa0a3; border-bottom:none; }
+.thePlanDetails .planTitle { font-size:18px; text-transform: none; line-height:1.4; margin:0 0 10px; float:left; }
+.thePlanDetails .planPremium { font-size:12px; text-transform: uppercase; float:right; }
+	.thePlanDetails .planPremium ul{ margin:0 50px 0 0; }
+	.thePlanDetails .planPremium ul li { margin:0; padding:0; }
+		.thePlanDetails .planPremium ul.right { text-align:right; margin-left:50px; }
+
+.thePlanDetails.dental .optionTop { background:#e9eef3; }
+.thePlanDetails.dental table.myPlanDetails th { background:#d1deeb; }		
+.thePlanDetails.dental .blue { color:#7babd0; }
+
+
+/* PLAN SELECTIONS (plan-selections.html)
+----------------------------------- */
+
+table#familyPlan { width:100%; text-align:left; margin:0 0 30px; }
+table#familyPlan tr { }
+table#familyPlan th.review { background:#7aabd0; color:#fff; font-size:12px; padding:10px; }
+	table.plan { width:100%; font-size:12px; }
+	table.plan th { background:#fce0cb; padding:10px; }
+	table.plan th.title { font-size:14px; }
+	table.plan td { background:#fff2e9; padding:10px; border-top:dashed 1px #b9b4b1; text-transform: uppercase; }
+	
+	table.dentalplan { width:100%; font-size:12px; }
+	table.dentalplan th { background:#e2ebf3; padding:10px; }
+	table.dentalplan th.title { font-size:14px; }
+	table.dentalplan td { background:#f0f4f9; padding:10px; border-top:dashed 1px #b9b4b1; text-transform: uppercase; }
+table#familyPlan tr.planFooter {}
+table#familyPlan tr.planFooter td { background:#757779; color:#fff; font-size:14px; padding:10px; border-top:dashed 1px #b9b4b1; text-transform: uppercase; }
+
+ul#familyPlanButtons, ul#mainButtons { margin:0; }
+ul#familyPlanButtons li, ul#mainButtons li { float:left; margin:0 180px 0 0; }
+	ul#familyPlanButtons li.last, ul#mainButtons li.last { margin:0; }
+ul#familyPlanButtons a.button, ul#mainButtons a.button { background: #456d81;
+background: -moz-linear-gradient(top,  #456d81 0%, #2da9de 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#456d81), color-stop(100%,#2da9de));
+background: -webkit-linear-gradient(top,  #456d81 0%,#2da9de 100%);
+background: -o-linear-gradient(top,  #456d81 0%,#2da9de 100%);
+background: -ms-linear-gradient(top,  #456d81 0%,#2da9de 100%);
+background: linear-gradient(to bottom,  #456d81 0%,#2da9de 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#456d81', endColorstr='#2da9de',GradientType=0 );
+color:#fff;
+ }
+
+
+/* FOOTER
+----------------------------------- */
+#footer{ width:100%; background:#7aabd0; text-align: center; padding:20px 0; color:#fff;
+ }
+#copyright { width:960px; margin:25px auto; text-align:center; font-size:10px; color:#58595b; }
+#copyright a { text-decoration:none; color:#58595b; }
+
+
+
+/* #Font-Face
+================================================== */
+/* 	This is the proper syntax for an @font-face file
+		Just create a "fonts" folder at the root,
+		copy your FontName into code below and remove
+		comment brackets */
+
+/*	@font-face {
+	    font-family: 'FontName';
+	    src: url('../fonts/FontName.eot');
+	    src: url('../fonts/FontName.eot?iefix') format('eot'),
+	         url('../fonts/FontName.woff') format('woff'),
+	         url('../fonts/FontName.ttf') format('truetype'),
+	         url('../fonts/FontName.svg#webfontZam02nTh') format('svg');
+	    font-weight: normal;
+	    font-style: normal; }
+*/
+
+@font-face {
+	font-family: 'Avenir Light';
+	src: url('fonts/AvenirLTStd-Light.eot');
+	src: local('☺'), url('fonts/AvenirLTStd-Light.woff') format('woff'), url('fonts/AvenirLTStd-Light.ttf') format('truetype'), url('fonts/AvenirLTStd-Light.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Avenir Medium';
+	src: url('fonts/AvenirLTStd-Medium.eot');
+	src: local('☺'), url('fonts/AvenirLTStd-Medium.woff') format('woff'), url('fonts/AvenirLTStd-Medium.ttf') format('truetype'), url('fonts/AvenirLTStd-Medium.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
