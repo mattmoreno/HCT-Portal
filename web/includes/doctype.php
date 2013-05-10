@@ -67,3 +67,23 @@ $default_desc = '';
 		onblur="javascript:ReplaceField(this,'Enter your ZIP code');"
 		value="Enter your ZIP code"
      -->
+     
+<script language="javascript">
+jQuery(document).ready(function($) {
+	//ENTER SCRIPTS HERE
+	$("#planHelp a").toggle(
+	  function () {
+	    $("#helpOverlay").css("display", "block");
+	    $("#planHelp").addClass("on");
+	  },
+	  function () {
+	    $("#helpOverlay").css("display", "none");
+	    $("#planHelp").removeClass("on");
+	  }
+	);	
+	$("#accordion").tabs(
+	    "#accordion div.pane",
+	    {tabs: 'h2', effect: 'slide', initialIndex:0 }
+    );
+});
+</script> 
