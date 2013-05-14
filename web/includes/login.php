@@ -28,6 +28,11 @@
     	<a href="#">Help</a>
     	<div id="helpOverlay">
     	
+    		<div id="helpClose">
+    			Help
+    			<div id="helpCloseX"></div>
+    		</div>
+    	
     		<div id="accordion">
     		  <ul>
     		  	<li>

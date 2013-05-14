@@ -80,6 +80,12 @@ jQuery(document).ready(function($) {
 	    $("#helpOverlay").css("display", "none");
 	    $("#planHelp").removeClass("on");
 	  }
+	);
+	$("#helpCloseX").click(
+		function () {
+	    $("#helpOverlay").css("display", "none");
+	    $("#planHelp").removeClass("on");
+	  }
 	);	
 	$("#accordion").tabs(
 	    "#accordion div.pane",
