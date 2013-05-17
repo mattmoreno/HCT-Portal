@@ -172,11 +172,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9aa7b2', end
  
 #helpOverlay div { float:none !important; text-indent: 0; }
 #helpOverlay div h3 { color:#a6c6df; font-size:11px; font-family: "Avenir Medium", Helvetica, Arial, sans-serif; line-height:normal; }
-#helpOverlay div p { line-height:1.45; }
+#helpOverlay div p { line-height:1.45; margin:0 0 10px; }
 #helpOverlay div.pane { padding:10px; }
 #helpOverlay div.pane input { width:100px; border:solid 1px #4d4d4f; color:#4d4d4f; border-radius:3px;, -webkit-border-radius: 3px; }
-#helpOverlay div.pane li { background:none; border:none; }
+#helpOverlay div.pane li { background:none; border:none;  }
 #helpOverlay div.pane li a { width:inherit; height:inherit; }
+
+#helpOverlay div.search { border-bottom:dashed 1px #a6c6df; margin-bottom:10px; }
+#helpOverlay ul.qa li { border-bottom:dashed 1px #a6c6df; margin-bottom:10px; }
 
 
 /* CONTENT STYLES
