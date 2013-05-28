@@ -1,0 +1,75 @@
+<?php $meta_page = 'indiv-introductory';
+$block_page = 'individual';
+$title_block = '';
+$desc_block = '';
+$keywords_block = '';
+include ('includes/doctype.php');  ?>
+<!--ADD ADDITIONAL PAGE-SPECIFIC SCRIPTS HERE-->   
+<script language="javascript">
+jQuery(document).ready(function($) {
+	$('ul#coverageSteps li').last().addClass("no-margin");
+});
+</script>   
+     
+</head>
+<body>
+<div class="container">
+
+    <!--HEADER-->
+    <?php include ('includes/header.php'); ?>
+    <!--/-->
+    
+    <!--LOGIN/LOGOUT-->
+    <?php include ('includes/login.php'); ?>
+    <!--/-->
+    
+    <!--CONTENT-->
+        <div id="content" class="clearfix">
+            <div id="content_left">
+	          	<div id="subnav">  
+	            	<h5>Apply for Coverage</h5>
+	            	<ul id="sub_findPlan">
+	            		<li class="selected"><a href="#" title="Start Your Application">Start Your Application</a></li>
+	            		<li><a href="#" title="Complete Your Application">Complete Your Application</a></li>
+	            		<li><a href="#" title="Review + Apply">Review + Apply</a></li>
+	            	</ul>
+	          	</div>
+            </div><!--end content left-->
+            <div id="content_right">
+            	<div id="topInsideBar" class="clearfix">&nbsp;
+            	</div>
+            	<div id="lrgOrangeHeader">Apply for Coverage</div>
+            	<div id="mainContent">
+	            	<ul id="coverageSteps" class="clearfix">
+	            		<li class="step1">
+	            			<h4>1. Start Your Application</h4>
+	            			<p>To get started with your application, the first step is to create an account and review our privacy policy. You will be asked to provide a username and password for future access to your account.</p>
+	            		</li>
+	            		<li class="step2">
+	            			<h4>2. Complete Your Application</h4>
+	            			<p>In this step, you will fill in information about you, the primary account holder, as well as family members who will be on the plan. You will have the opportunity to adjust the number of family members on your plan during your application review.</p>
+	            		</li>
+	            		<li class="step3">
+	            			<h4>3. Review + Apply</h4>
+	            			<p>In the third step, you will be able to review or edit your application and your selected plan. After reviewing, please review our terms and conditions and e-sign to submit an application for your health care plan.</p>
+	            		</li>
+	            	</ul>
+		            
+		            <ul id="familyPlanButtons" class="clearfix">
+		            	<li><a href="#" class="button">&#10094; Back</a></li>
+		            	<li class="last right"><a href="#" class="button">Next &#10095;</a></li>
+		            </ul>
+		            
+            	</div><!-- end main content -->
+            </div><!--end content right-->   
+        </div><!--END content-->
+    <!--/-->
+    
+    
+    
+    <!--FOOTER--> 
+    <?php include ('includes/footer.php'); ?>
+    <!--/-->
+   
+</body>
+</html>

@@ -91,5 +91,8 @@ jQuery(document).ready(function($) {
 	    "#accordion div.pane",
 	    {tabs: 'h2', effect: 'slide', initialIndex:0 }
     );
+    <?php if ( $block_page == individual) : ?>
+    $("#login_wrap").addClass("indiv");
+    <?php endif; ?>
 });
 </script> 

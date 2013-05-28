@@ -1,5 +1,5 @@
 <div id="head_wrap" class="clearfix">
-	<div id="logo"><a href="#"><img src="images/hct_logo.gif" /></a></div>
+	<div id="logo"><a href="<?php echo (CURRENT_PATH) ?>"><img src="images/hct_logo.gif" /></a></div>
     <!--<ul id="nav">
         <li id="btn_findPlan"><a href="#" title="Find a Plan">Find a Plan</a></li>
         <li id="btn_applyCoverage"><a href="#" title="Apply for Coverage">Apply for Coverage</a></li>
