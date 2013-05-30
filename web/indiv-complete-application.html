@@ -1,0 +1,74 @@
+<?php $meta_page = 'indiv-complete-application';
+$block_page = 'individual';
+$title_block = '';
+$desc_block = '';
+$keywords_block = '';
+include ('includes/doctype.php');  ?>
+<!--ADD ADDITIONAL PAGE-SPECIFIC SCRIPTS HERE-->   
+<script language="javascript">
+jQuery(document).ready(function($) {
+	$('ul#coverageSteps li').last().addClass("no-margin");
+});
+</script>   
+     
+</head>
+<body>
+<div class="container">
+
+    <!--HEADER-->
+    <?php include ('includes/header.php'); ?>
+    <!--/-->
+    
+    <!--LOGIN/LOGOUT-->
+    <?php include ('includes/login.php'); ?>
+    <!--/-->
+    
+    <!--CONTENT-->
+        <div id="content" class="clearfix">
+            <div id="content_left">
+	          	<div id="subnav">  
+	            	<h5>Apply for Coverage</h5>
+	            	<ul id="sub_findPlan">
+	            		<li><a href="#" title="Start Your Application">Start Your Application</a></li>
+	            		<li class="selected"><a href="#" title="Complete Your Application">Complete Your Application</a></li>
+	            		<li><a href="#" title="Review + Apply">Review + Apply</a></li>
+	            	</ul>
+	          	</div>
+            </div><!--end content left-->
+            <div id="content_right">
+            	<div id="topInsideBar" class="clearfix">&nbsp;
+            	</div>
+            	<div id="applicationGraphic"><img src="images/applicationGraphic.png" alt="applicationGraphic" /></div>
+            	<div id="lrgBlueHeader">Complete Your Application</div>
+            	<div id="mainContent">
+            		<div class="mainLeft">
+		            	<div class="blueHeader">Coming Up In This Section</div>
+		            	<p>In this section, you will have the opportunity to complete your application for your selected health care plan. As the primary account holder, we will need key information about you. We will also ask a series of questions about the members of your household who will be applying for healthcare coverage. In the next section, when you review your application, you will have the opportunity to add or remove family members on the plan. Changes in the number of members on your plan may affect your plan rate.</p>
+            		</div>
+            		<div class="mainRight">
+		            	<div class="orangeHeader">You May Need</div>
+		            	<ul class="orangeArrows">
+		            		<li>Your email and social security number</li>
+		            		<li>Social security number and addresses for your family members who are applying.</li>
+		            		<li>Contact information for those who are applying</li>
+		            	</ul>
+            		</div>
+		            
+		            <ul id="familyPlanButtons" class="clearfix">
+		            	<li><a href="#" class="button">&#10094; Back</a></li>
+		            	<li class="last right"><a href="indiv-application-person-one.html" class="button">Next &#10095;</a></li>
+		            </ul>
+		            
+            	</div><!-- end main content -->
+            </div><!--end content right-->   
+        </div><!--END content-->
+    <!--/-->
+    
+    
+    
+    <!--FOOTER--> 
+    <?php include ('includes/footer.php'); ?>
+    <!--/-->
+   
+</body>
+</html>

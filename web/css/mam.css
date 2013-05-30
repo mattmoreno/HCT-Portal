@@ -189,6 +189,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9aa7b2', end
 #content_left{ float:left; height:auto; position:relative; width:222px; background:#e5e5e5; padding:20px 0;  }
 #content_right{ height:auto; float:right; position:relative; width:735px; -webkit-box-shadow: -5px 0px 10px rgba(169, 171, 173, 0.75); -moz-box-shadow: -5px 0px 10px rgba(169, 171, 173, 0.75); box-shadow: -5px 0px 10px rgba(169, 171, 173, 0.75);}
 #mainContent { padding:25px; }
+.mainLeft { float:left; width:445px; }
+.mainRight { float:right; width:200px; }
 
 #subnav {  }
 #subnav a { text-decoration:none; }
@@ -268,7 +270,7 @@ div#getStarted .error, div#account .error { font-size:10px; color:#bc2e2b; }
 
 /* PLAN OPTIONS (plan-options.html)
 ----------------------------------- */
-.blueHeader { background:#7aabd0; color:#fff; font-size:12px; padding:10px; width:665px; margin:0 0 20px; }
+.blueHeader, .orangeHeader { background:#7aabd0; color:#fff; font-size:12px; padding:10px; /*width:665px;*/ margin:0 0 20px; }
 #mainContent ul#planOptions { margin:0 0 30px; text-transform: uppercase; font-size:10px; }
 #mainContent ul#planOptions li { padding:20px; border-bottom:dashed 1px #b9b4b1; margin:0; }
 #mainContent ul#planOptions li.alt { background:#fff; }
@@ -370,7 +372,7 @@ color:#fff;
  
  /* INDIVIDUAL INTRODUCTORY (indiv-introductory.html)
 ----------------------------------- */
-#lrgOrangeHeader { background:#f4b685; color:#fff; font-size:50px; line-height:normal; font-weight:700; padding:5px 20px; text-transform:lowercase; }
+#lrgOrangeHeader, #lrgBlueHeader { background:#f4b685; color:#fff; font-size:50px; line-height:normal; font-weight:700; padding:5px 20px; text-transform:lowercase; }
 ul#coverageSteps { margin:0 0 20px; border-bottom:solid 3px #7aabd0; }
 ul#coverageSteps li  { margin:0 25px 0 0; padding:150px 0 0; float:left; width:210px; }
 	ul#coverageSteps li.step1 { background:url(../images/applyStep1.gif) no-repeat center top; }
@@ -388,13 +390,24 @@ div#account legend { width:90%; }
 div#account .row { border-top:none; padding:0; }
 div#account .formhalf { width:180px; }
 #norton { clear:both; }
+div#account ul#mainButtons { border-top:solid 2px #7aabd0; margin-top:20px; padding-top:10px; }
 
 
 /* INDIVIDUAL PRIVACY POLICY (indiv-privacy-policy.html)
 ----------------------------------- */
-#privacyAgreeText { background:#fff; height:100px; overflow:scroll; padding:15px; border:solid 1px #797a7d; font-size:12px; margin:0 0 20px;  }
+#privacyAgreeText { background:#fff; height:100px; overflow:scroll; padding:10px; border:solid 1px #797a7d; font-size:12px; margin:0 0 20px;  }
 div#account input[type="checkbox"] { width:10px !important; margin:0 0 0 5px !important; }
-.forCheckbox label span { color:#4d4d51 !important; text-transform: none; }
+.forCheckbox label span { color:#4d4d51 !important; text-transform: none; font-size:13px !important; }
+
+
+/* INDIVIDUAL COMPLETE APPLICATION (indiv-complete-application.html)
+----------------------------------- */
+#applicationGraphic { height:165px; background:#facca9; position: relative; }
+#applicationGraphic img { position:absolute; top:-7px; left:50px; }
+#lrgBlueHeader { background:#cdddec; }
+.orangeHeader { background:#e0822f; }
+ul.orangeArrows { }
+ul.orangeArrows li { background:url(../images/li_orangeArrow.gif) no-repeat left 2px; padding:0 0 0 20px; }
 
 
 /* FOOTER
