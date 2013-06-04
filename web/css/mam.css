@@ -271,13 +271,13 @@ div#getStarted .error, div#account .error { font-size:10px; color:#bc2e2b; }
 /* PLAN OPTIONS (plan-options.html)
 ----------------------------------- */
 .blueHeader, .orangeHeader { background:#7aabd0; color:#fff; font-size:12px; padding:10px; /*width:665px;*/ margin:0 0 20px; }
-#mainContent ul#planOptions { margin:0 0 30px; text-transform: uppercase; font-size:10px; }
-#mainContent ul#planOptions li { padding:20px; border-bottom:dashed 1px #b9b4b1; margin:0; }
-#mainContent ul#planOptions li.alt { background:#fff; }
-#mainContent ul#planOptions * li { border-bottom:none; }
-#mainContent ul#planOptions li .optionTop { margin:0 0 10px; }
-#mainContent ul#planOptions li .optionLeft { float:left;}
-#mainContent ul#planOptions li .optionRight { float:right; border-left:dashed 1px #b9b4b1; width:97px; padding:0 0 0 15px;}
+#mainContent ul#planOptions, #mainContent ul#planReview { margin:0 0 30px; text-transform: uppercase; font-size:10px; }
+#mainContent ul#planOptions li, #mainContent ul#planReview li { padding:20px; border-bottom:dashed 1px #b9b4b1; margin:0; }
+#mainContent ul#planOptions li.alt, #mainContent ul#planReview li.alt { background:#fff; }
+#mainContent ul#planOptions * li, #mainContent ul#planReview * li { border-bottom:none; }
+#mainContent ul#planOptions li .optionTop, #mainContent ul#planReview li .optionTop { margin:0 0 10px; }
+#mainContent ul#planOptions li .optionLeft, #mainContent ul#planReview li .optionLeft { float:left;}
+#mainContent ul#planOptions li .optionRight, #mainContent ul#planReview li .optionRight { float:right; border-left:dashed 1px #b9b4b1; width:97px; padding:0 0 0 15px;}
 
 
 #mainContent ul#planOptions li .planTitle { font-size:18px; float:left; width:215px; text-transform: none; line-height:1.4; margin:0 30px 0 0; }
@@ -408,6 +408,22 @@ div#account input[type="checkbox"] { width:10px !important; margin:0 0 0 5px !im
 .orangeHeader { background:#e0822f; }
 ul.orangeArrows { }
 ul.orangeArrows li { background:url(../images/li_orangeArrow.gif) no-repeat left 2px; padding:0 0 0 20px; }
+
+
+/* INDIVIDUAL PLAN REVIEW (indiv-plan-review.html)
+----------------------------------- */
+#mainContent ul#planReview li { background:#fbefe7; }
+#mainContent ul#planReview li .planTitle { font-size:18px; float:left; width:200px; text-transform: none; line-height:1.4; margin:0 30px 0 0; }
+#mainContent ul#planReview li .planPrice { float:left; width:65px; color:#e08130; text-align: center; position: relative; top:5px; margin:0 15px 0 0; font-size:10px; }
+	#mainContent ul#planReview li .planPrice big { font-size:26px; }
+#mainContent ul#planReview li .planPremium { float:left; width:270px; padding:0 0 0 15px; border-left:dashed 1px #b9b4b1; font-size:12px; }
+	#mainContent ul#planReview li .planPremium ul { margin:0 20px 0 0; float:left; }
+	#mainContent ul#planReview li .planPremium ul li { margin:0; padding:0; }
+
+#mainContent ul#planReview li .optionRight ul { margin:0; }
+#mainContent ul#planReview li .optionRight ul li { margin:0; padding:0; }
+
+#mainContent ul.disclaimers li { font-size:12px; border-bottom:1px dashed #b9b4b1; padding:0 0 10px; }
 
 
 /* FOOTER

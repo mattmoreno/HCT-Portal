@@ -1,0 +1,109 @@
+<?php $meta_page = 'indiv-plan-review';
+$block_page = 'individual';
+$title_block = '';
+$desc_block = '';
+$keywords_block = '';
+include ('includes/doctype.php');  ?>
+<!--ADD ADDITIONAL PAGE-SPECIFIC SCRIPTS HERE-->   
+<script language="javascript">
+jQuery(document).ready(function($) {
+	$('ul#coverageSteps li').last().addClass("no-margin");
+});
+</script>   
+     
+</head>
+<body>
+<div class="container">
+
+    <!--HEADER-->
+    <?php include ('includes/header.php'); ?>
+    <!--/-->
+    
+    <!--LOGIN/LOGOUT-->
+    <?php include ('includes/login.php'); ?>
+    <!--/-->
+    
+    <!--CONTENT-->
+        <div id="content" class="clearfix">
+            <div id="content_left">
+	          	<div id="subnav">  
+	            	<h5>Apply for Coverage</h5>
+	            	<ul id="sub_findPlan">
+	            		<li><a href="#" title="Start Your Application">Start Your Application</a></li>
+	            		<li><a href="#" title="Complete Your Application">Complete Your Application</a></li>
+	            		<li class="selected"><a href="#" title="Review + Apply">Review + Apply</a></li>
+	            	</ul>
+	          	</div>
+            </div><!--end content left-->
+            <div id="content_right">
+            	<div id="topInsideBar" class="clearfix">&nbsp;
+            	</div>
+            	<div id="mainContent">
+	            	<h3>Plan Review</h3>
+	            	<p>Before you continue, please carefully review your selected plan. If this is the plan you would like to apply four, click next to review our terms + conditions and provide your signature to submit your application.</p>
+	            	
+	            	<div class="blueHeader">Your Selected Plan</div>
+		            
+		            <ul id="planReview">
+		            	<li class="clearfix">
+		            		<div class="optionLeft">
+		            			<div class="optionTop clearfix">
+			            			<div class="planTitle">Plan Name A + Dental Plan Type</div>
+			            			<div class="planPremium">
+			            				<ul class="planPremiumLeft">
+			            					<li class="orange">Annual Deductible</li>
+			            					<li>Office Visit For Primary Doctor</li>
+			            					<li>Health Savings Eligible</li>
+			            				</ul>
+			            				<ul class="planPremiumRight">
+			            					<li class="orange">$000</li>
+			            					<li>$000</li>
+			            					<li>$00</li>
+			            				</ul>
+			            			</div>
+		            			</div>
+		            			<div class="optionBottom">
+		            				More Info <span class="orange">$000  |</span>  More Info <span class="orange">000%  |</span>  Copay <span class="orange">$30</span> PCP <span class="orange">$40</span> Specialist
+		            			</div>
+		            		</div>
+		            		<div class="optionRight">
+		            			<div class="planPrice"><big>$000</big> Per Month</div>
+		            		</div>
+		            	</li>
+		            </ul>
+		            
+		            <div class="blueHeader">Disclaimers</div>
+		            
+		            <ul class="disclaimers">
+		            	<li>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia</li>
+		            	<li>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia</li>
+		            </ul>
+							
+							<ul id="mainButtons" class="clearfix">
+				            	<li class="last right"><a href="indiv-complete-application.html" class="button">Next &#10095;</a></li>
+				            </ul>
+							 
+		            	</fieldset>
+		            	
+		            	<div id="norton">
+		            		<img src="images/logo_norton.gif" alt="logo_norton" />
+		            	</div>
+
+ 
+		            </div>
+		            
+	
+		            
+            	</div><!-- end main content -->
+            </div><!--end content right-->   
+        </div><!--END content-->
+    <!--/-->
+    
+    
+    
+    <!--FOOTER--> 
+    <?php include ('includes/footer.php'); ?>
+    <!--/-->
+   
+</body>
+</html>

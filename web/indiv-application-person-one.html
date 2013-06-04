@@ -38,142 +38,276 @@ jQuery(document).ready(function($) {
 	            	<h5>Apply for Coverage</h5>
 	            	<ul id="sub_findPlan">
 	            		<li><a href="#" title="Start Your Application">Start Your Application</a></li>
-	            		<li class="selected"><a href="#" title="Complete Your Application">Complete Your Application</a></li>
+	            		<li class="selected"><a href="#" title="Complete Your Application">Complete Your Application</a>
+	            			<ul id="selectPerson">
+	            				<li><a href="#" title="Person One">Person One</a></li>
+	            				<li><a href="#" title="Person Two">Person Two</a></li>
+	            				<li><a href="#" title="Person Three">Person Three</a></li>
+	            			</ul>
+	            		</li>
 	            		<li><a href="#" title="Review + Apply">Review + Apply</a></li>
 	            	</ul>
 	          	</div>
             </div><!--end content left-->
             <div id="content_right">
-            	<div id="topInsideBar" class="clearfix hidden">
+            	<div id="topInsideBar" class="clearfix">
             		&nbsp;
             	</div>
             	
-            	<div id="topInsideBarError" class="clearfix">
+            	<div id="topInsideBarError" class="clearfix hidden">
             		Please enter your zip code
             	</div>
             	<div id="mainContent">
-	            	<h3>Give us the basics to find your plan options.</h3>
+	            	<h3>Your Application | Spouse</h3>
+	            	<p>Please enter the information required below for your spouse.</p>
 		            <small class="right">Required<span class="required">*</span></small>
 		            
 		            <div id="getStarted" action="#">
 		            	<fieldset> 
-			            	<legend>Coverage location and start date</legend>
+			            	<legend>Name</legend>
 			            	
 			            	<div class="row">
 			            		<div class="formhalf">
-									<label for="regularInput">Zip Code<span class="required">*</span></label>
-									<input type="text" id="zipcode" />
-									<div class="error">Please enter a valid zip code</div>
+									<label for="prefix">Prefix</label>
+									<select id="selectList">
+										<option value="Option 1">Mr.</option>
+										<option value="Option 2">Mrs.</option>
+									</select>
 			            		</div>
 			            		<div class="formhalf">
-									<label for="regularInput">Start Coverage On<span class="required">*</span></label>
-									<input type="text" id="startcoverage" />
+									<label for="firstname">First Name<span class="required">*</span></label>
+									<input type="text" id="firstname" />
+			            		</div>
+			            		<div class="formhalf">
+									<label for="middlename">Middle Name<span class="required">*</span></label>
+									<input type="text" id="middlename" />
+			            		</div>
+			            		<div class="formhalf">
+									<label for="lastname">Last Name<span class="required">*</span></label>
+									<input type="text" id="firstname" />
+			            		</div>
+			            		<div class="formhalf">
+									<label for="suffix">Suffix</label>
+									<select id="selectList">
+										<option value="Option 1">Jr.</option>
+										<option value="Option 2">III</option>
+									</select>
 			            		</div>
 							</div>
 		            	</fieldset>
 		            	
 		            	<fieldset> 
-			            	<legend>Please enter who needs coverage in your household.</legend>
+			            	<legend>Residential Address</legend>
 			            	
 			            	<div class="row">
 			            		<div class="formhalf">
-									<label for="subscriber">Subscriber<span class="required">*</span></label>
-									<input type="text" id="subscriber" />
+									<label for="address">Address Line 1<span class="required">*</span></label>
+									<input type="text" id="address" />
 			            		</div>
 			            		<div class="formhalf">
-									<label for="dob">Date of Birth<span class="required">*</span></label>
-									<input type="text" id="dob" />
-									<!--BEGIN TOOLTIP-->
-									<div class="tooltip">
-										<h4>Reminder</h4>
-										<p>Dependent children over age 26 are not eligible for this coverage unless they have a disability. Proof of disabled status will be required before coverage becomes effective.</p>
-										<div class="yesno">
-											<fieldset>
-											    <label class="question" for="">Is this child disabled?</label>
-											    <label class="option" for="regularRadio">
-											      <input type="radio" name="radios" id="regularRadio" value="Yes" />
-											      <span>Yes</span>
-											    </label>
-											    <label class="option" for="secondRegularRadio">
-											      <input type="radio" name="radios" id="secondRegularRadio" value="No" />
-											      <span>No</span>
-											    </label>
-											 </fieldset>
-										</div>									  
-									</div>
-									<!--END TOOLTIP-->
+									<label for="address2">Address Line 2</label>
+									<input type="text" id="address2" />
 			            		</div>
 							</div>
 							
 							<div class="row">
 			            		<div class="formhalf">
-									<label for="selectList">Spouse</label>
+									<label for="city">City<span class="required">*</span></label>
+									<input type="text" id="city" />
+			            		</div>
+			            		<div class="formhalf">
+									<label for="state">State</label>
 									<select id="selectList">
-										<option value="Option 1">No</option>
-										<option value="Option 2">Yes</option>
+										<option value="AL">Alabama</option>
+										<option value="AK">Alaska</option>
+										<option value="AZ">Arizona</option>
+										<option value="AR">Arkansas</option>
+										<option value="CA">California</option>
+										<option value="CO">Colorado</option>
+										<option value="CT">Connecticut</option>
+										<option value="DE">Delaware</option>
+										<option value="DC">Dist of Columbia</option>
+										<option value="FL">Florida</option>
+										<option value="GA">Georgia</option>
+										<option value="HI">Hawaii</option>
+										<option value="ID">Idaho</option>
+										<option value="IL">Illinois</option>
+										<option value="IN">Indiana</option>
+										<option value="IA">Iowa</option>
+										<option value="KS">Kansas</option>
+										<option value="KY">Kentucky</option>
+										<option value="LA">Louisiana</option>
+										<option value="ME">Maine</option>
+										<option value="MD">Maryland</option>
+										<option value="MA">Massachusetts</option>
+										<option value="MI">Michigan</option>
+										<option value="MN">Minnesota</option>
+										<option value="MS">Mississippi</option>
+										<option value="MO">Missouri</option>
+										<option value="MT">Montana</option>
+										<option value="NE">Nebraska</option>
+										<option value="NV">Nevada</option>
+										<option value="NH">New Hampshire</option>
+										<option value="NJ">New Jersey</option>
+										<option value="NM">New Mexico</option>
+										<option value="NY">New York</option>
+										<option value="NC">North Carolina</option>
+										<option value="ND">North Dakota</option>
+										<option value="OH">Ohio</option>
+										<option value="OK">Oklahoma</option>
+										<option value="OR">Oregon</option>
+										<option value="PA">Pennsylvania</option>
+										<option value="RI">Rhode Island</option>
+										<option value="SC">South Carolina</option>
+										<option value="SD">South Dakota</option>
+										<option value="TN">Tennessee</option>
+										<option value="TX">Texas</option>
+										<option value="UT">Utah</option>
+										<option value="VT">Vermont</option>
+										<option value="VA">Virginia</option>
+										<option value="WA">Washington</option>
+										<option value="WV">West Virginia</option>
+										<option value="WI">Wisconsin</option>
+										<option value="WY">Wyoming</option>
 									</select>
 			            		</div>
 			            		<div class="formhalf">
-									<label for="dob">Date of Birth<span class="required">*</span></label>
-									<input type="text" id="dob" />
-									<!--BEGIN TOOLTIP-->
-									<div class="tooltip">
-										<h4>Reminder</h4>
-										<p>Dependent children over age 26 are not eligible for this coverage unless they have a disability. Proof of disabled status will be required before coverage becomes effective.</p>
-										<div class="yesno">
-											<fieldset>
-											    <label class="question" for="">Is this child disabled?</label>
-											    <label class="option" for="regularRadio">
-											      <input type="radio" name="radios" id="regularRadio" value="Yes" />
-											      <span>Yes</span>
-											    </label>
-											    <label class="option" for="secondRegularRadio">
-											      <input type="radio" name="radios" id="secondRegularRadio" value="No" />
-											      <span>No</span>
-											    </label>
-											 </fieldset>
-										</div>									  
-									</div>
-									<!--END TOOLTIP-->
+									<label for="zipcode">Zip</label>
+									<input type="text" id="zipcode" />
 			            		</div>
 							</div>
-							
+							<div class="row forCheckbox">
+									<label for="agree">
+										<input type="checkbox" name="addressdiff" id="addressdiff" value="I agree">
+										<span>Mailing address is different than household address</span>
+									</label>
+							</div>
 							<div class="row">
 			            		<div class="formhalf">
-									<label for="dependent01
-									">Dependent Child 1<span class="required">*</span></label>
-									<input type="text" id="dependent01" />
+									<label for="homephone">Home Phone</label>
+									<input type="text" id="homephone" />
 			            		</div>
 			            		<div class="formhalf">
-									<label for="dob">Date of Birth<span class="required">*</span></label>
-									<input type="text" id="dob" />
-									<!--BEGIN TOOLTIP-->
-									<div class="tooltip">
-										<h4>Reminder</h4>
-										<p>Dependent children over age 26 are not eligible for this coverage unless they have a disability. Proof of disabled status will be required before coverage becomes effective.</p>
-										<div class="yesno">
-											<fieldset>
-											    <label class="question" for="">Is this child disabled?</label>
-											    <label class="option" for="regularRadio">
-											      <input type="radio" name="radios" id="regularRadio" value="Yes" />
-											      <span>Yes</span>
-											    </label>
-											    <label class="option" for="secondRegularRadio">
-											      <input type="radio" name="radios" id="secondRegularRadio" value="No" />
-											      <span>No</span>
-											    </label>
-											 </fieldset>
-										</div>									  
-									</div>
-									<!--END TOOLTIP-->
+									<label for="workphone">Work Phone</label>
+									<input type="text" id="workphone" />
 			            		</div>
 							</div>
-							
-							<div class="addMoreChildren"><a href="#">+ Add More Dependent Children</a></div>
-							 
 		            	</fieldset>
-
- 
+		            	
+		            	<fieldset> 
+			            	<legend>Demographic Data</legend>
+			            	
+			            	<div class="row">
+			            		<div class="formhalf">
+									<label for="ss">Social Security</label>
+									<input type="text" id="ss" />
+			            		</div>
+			            		<div class="formhalf">
+									<label for="gender">Gender</label>
+									<select id="selectList">
+										<option value="Option 1">Male</option>
+										<option value="Option 2">Female</option>
+									</select>
+			            		</div>
+			            		<div class="formhalf">
+									<label for="maritalstatus">Marital Status</label>
+									<select id="selectList">
+										<option value="Option 1">Single</option>
+										<option value="Option 2">Married</option>
+									</select>
+			            		</div>
+			            		
+			            		<div class="yesno">
+									<fieldset>
+									    <label class="question" for="">Ethnicity</label>
+									    <label class="option" for="regularCheckbox">
+									      <input type="checkbox" name="ethnicity" id="regularCheckbox" value="Ethnicity" />
+									      <span>Ethnicity</span>
+									    </label>
+									    <label class="option" for="regularCheckbox">
+									      <input type="checkbox" name="ethnicity" id="regularCheckbox" value="Ethnicity" />
+									      <span>Ethnicity</span>
+									    </label>
+									    <label class="option" for="regularCheckbox">
+									      <input type="checkbox" name="ethnicity" id="regularCheckbox" value="Ethnicity" />
+									      <span>Ethnicity</span>
+									    </label>
+									    <label class="option" for="regularCheckbox">
+									      <input type="checkbox" name="ethnicity" id="regularCheckbox" value="Ethnicity" />
+									      <span>Ethnicity</span>
+									    </label>
+									    <label class="option" for="regularCheckbox">
+									      <input type="checkbox" name="ethnicity" id="regularCheckbox" value="Ethnicity" />
+									      <span>Ethnicity</span>
+									    </label>
+									 </fieldset>
+								</div>
+								
+								<div class="yesno">
+									<fieldset>
+									    <label class="question" for="">Race</label>
+									    <label class="option" for="regularCheckbox">
+									      <input type="checkbox" name="race" id="regularCheckbox" value="Race" />
+									      <span>Race</span>
+									    </label>
+									    <label class="option" for="regularCheckbox">
+									      <input type="checkbox" name="race" id="regularCheckbox" value="Race" />
+									      <span>Race</span>
+									    </label>
+									    <label class="option" for="regularCheckbox">
+									      <input type="checkbox" name="race" id="regularCheckbox" value="Race" />
+									      <span>Race</span>
+									    </label>
+									    <label class="option" for="regularCheckbox">
+									      <input type="checkbox" name="race" id="regularCheckbox" value="Race" />
+									      <span>Race</span>
+									    </label>
+									    <label class="option" for="regularCheckbox">
+									      <input type="checkbox" name="race" id="regularCheckbox" value="Race" />
+									      <span>Race</span>
+									    </label>
+									    <label class="option" for="regularCheckbox">
+									      <input type="checkbox" name="race" id="regularCheckbox" value="Race" />
+									      <span>Race</span>
+									    </label>
+									 </fieldset>
+								</div>	
+							</div>
+		            	</fieldset>
+		            	
+		            	<fieldset>
+		            		<legend>Questions</legend>
+		            		<div class="row">
+							    <label class="option" for="regularCheckbox">
+							      <input type="checkbox" name="ethnicity" id="regularCheckbox" value="Ethnicity" />
+							      <span>Are you currently covered under an insurance plan?</span>
+							    </label>
+		            		</div>
+		            		<div class="row">
+							    <label class="option" for="regularCheckbox">
+							      <input type="checkbox" name="ethnicity" id="regularCheckbox" value="Ethnicity" />
+							      <span>Do you have a primary care physician, or want to choose one now?</span>
+							    </label>
+		            		</div>
+		            	</fieldset>	
+		            	
+		            	<fieldset>
+		            		<legend>Broker Assistance</legend>
+		            		<div class="row">
+							    <label class="option" for="regularCheckbox">
+							      <input type="checkbox" name="ethnicity" id="regularCheckbox" value="Ethnicity" />
+							      <span>Did a broker assist you with your application?</span>
+							    </label>
+		            		</div>
+		            		<div class="row">
+							    <label class="option" for="regularCheckbox">
+							      <input type="checkbox" name="ethnicity" id="regularCheckbox" value="Ethnicity" />
+							      <span>Please select the broker name who assisted you</span>
+							    </label>
+		            		</div>
+		            	</fieldset>	
+		            	
+		            	
 		            </div>
 		            
 		            <ul id="mainButtons" class="clearfix">
