@@ -40,8 +40,8 @@ jQuery(document).ready(function($) {
 	            		<li><a href="#" title="Start Your Application">Start Your Application</a></li>
 	            		<li class="selected"><a href="#" title="Complete Your Application">Complete Your Application</a>
 	            			<ul id="selectPerson">
-	            				<li class="selected"><a href="#" title="Person One">Person One</a></li>
-	            				<li><a href="#" title="Person Two">Person Two</a></li>
+	            				<li><a href="#" title="Person One">Person One</a></li>
+	            				<li class="selected"><a href="#" title="Person Two">Person Two</a></li>
 	            				<li><a href="#" title="Person Three">Person Three</a></li>
 	            			</ul>
 	            		</li>
@@ -58,8 +58,8 @@ jQuery(document).ready(function($) {
             		Please enter your zip code
             	</div>
             	<div id="mainContent">
-	            	<h3>Your Application | Head of Household</h3>
-	            	<p>Please enter the information required for the primary contact on the account.</p>
+	            	<h3>Your Application | Spouse</h3>
+	            	<p>Please enter the information required below for your spouse.</p>
 		            <small class="right">Required<span class="required">*</span></small>
 		            
 		            <div id="appForm" action="#">
@@ -216,6 +216,13 @@ jQuery(document).ready(function($) {
 										<option value="Option 2">Married</option>
 									</select>
 			            		</div>
+			            		<div class="form4">
+									<label for="relationship">Relationship to Primary</label>
+									<select id="selectList">
+										<option value="Option 1">Family</option>
+										<option value="Option 2">Friend</option>
+									</select>
+			            		</div>
 			            	</div>
 			            	<div class="row">
 			            		<div class="checkset">
@@ -281,36 +288,17 @@ jQuery(document).ready(function($) {
 		            		<div class="row">
 							    <label class="option" for="regularCheckbox">
 							      <input type="checkbox" name="ethnicity" id="regularCheckbox" value="Ethnicity" />
-							      <span>Are you currently covered under an insurance plan?</span>
+							      <span>Is your spouse currently covered under an insurance plan?</span>
 							    </label>
 		            		</div>
 		            		<div class="row">
 							    <label class="option" for="regularCheckbox">
 							      <input type="checkbox" name="ethnicity" id="regularCheckbox" value="Ethnicity" />
-							      <span>Do you have a primary care physician, or want to choose one now?</span>
+							      <span>Does your spouse have a primary care physician, or want to choose one now?</span>
 							    </label>
 		            		</div>
 		            	</fieldset>	
 		            	
-		            	<fieldset>
-		            		<legend>Broker Assistance</legend>
-		            		
-		            		<div class="row">
-							    <label class="option">Did a broker assist you with your application?</label>
-							      <select id="selectList">
-										<option value="Option 1">Yes</option>
-										<option value="Option 2">No</option>
-									</select>
-		            		</div>
-		            		
-		            		<div class="row">
-							    <label class="option">Please select the broker name who assisted you</label>
-							      <select id="selectList">
-										<option value="Option 1">Tom Applebee</option>
-										<option value="Option 2">Matt Moreno</option>
-									</select>
-		            		</div>
-		            	</fieldset>	
 		            	
 		            	
 		            </div>
@@ -318,7 +306,7 @@ jQuery(document).ready(function($) {
 		            <ul id="mainButtons" class="clearfix blueBar">
 		            	<li class="larrow"><a href="#" class="button">&#10094; Go Back</a></li>
 		            	<li><a href="#" class="button">Cancel Application</a></li>
-		            	<li class="rarrow last right"><a href="indiv-application-person-two.html" class="button">Next &#10095;</a></li>
+		            	<li class="rarrow last right"><a href="indiv-application-review.html" class="button">Next &#10095;</a></li>
 		            </ul>
 		            
             	</div><!-- end main content -->

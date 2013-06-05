@@ -239,17 +239,17 @@ li.email{ width:63px; background:url(../images/icon_gray_email.gif) no-repeat 41
 
 /* GETTING STARTED (getting-started.html)
 ----------------------------------- */
-div#getStarted { width:100%; }
-div#getStarted fieldset, div#account fieldset { margin-bottom:30px; }
-div#getStarted legend, div#account legend { background:#7aabd0; color:#fff; font-size:12px; padding:10px; width:665px; margin:0 0 20px; font-weight: normal; }
-div#getStarted .row, div#account .row { border-top:dashed 1px #b9b4b1; padding:5px 0; }
-div#getStarted label, div#account label { text-transform: uppercase; font-size:10px; }
-div#getStarted label span, div#account label span { color:#bc2e2b; font-size:11px; }
-div#getStarted .formhalf, div#account .formhalf { float:left; width:200px; position:relative; }
-div#getStarted input, div#getStarted textarea, div#getStarted select, div#account input { width:150px; margin:0 0 5px; }
+div#getStarted, div#appForm { width:100%; }
+div#getStarted fieldset, div#account fieldset, div#appForm fieldset { margin-bottom:30px; }
+div#getStarted legend, div#account legend, div#appForm legend { background:#7aabd0; color:#fff; font-size:12px; padding:10px; width:665px; margin:0 0 20px; font-weight: normal; }
+div#getStarted .row, div#account .row, div#appForm .row { border-top:dashed 1px #b9b4b1; padding:5px 0; }
+div#getStarted label, div#account label, div#appForm label { text-transform: uppercase; font-size:10px; }
+div#getStarted label span, div#account label span, div#appForm label span { color:#bc2e2b; font-size:11px; }
+div#getStarted .formhalf, div#account .formhalf, div#appForm .formhalf { float:left; width:200px; position:relative; }
+div#getStarted input, div#getStarted textarea, div#getStarted select, div#account input, div#appForm input, div#appForm textarea, div#appForm select { width:150px; margin:0 0 5px; }
 div#getStarted .addMoreChildren { text-transform: uppercase; font-size:10px; }
 div#getStarted .addMoreChildren a { color:#4d4d4f; }
-div#getStarted .error, div#account .error { font-size:10px; color:#bc2e2b; }
+div#getStarted .error, div#account .error, div#appForm .error { font-size:10px; color:#bc2e2b; }
 
 /* TOOLTIP */
 .tooltip { display:none; background:#fff; width:245px; font-size:10px; border:solid 1px #999a9b; position:absolute; left:185px; top:-70px; z-index:10; }
@@ -408,7 +408,28 @@ div#account input[type="checkbox"] { width:10px !important; margin:0 0 0 5px !im
 .orangeHeader { background:#e0822f; }
 ul.orangeArrows { }
 ul.orangeArrows li { background:url(../images/li_orangeArrow.gif) no-repeat left 2px; padding:0 0 0 20px; }
+.blueBar { clear:both; padding:10px 0 0; border-top:solid 2px #7aabd0; }
 
+
+/* INDIVIDUAL APPLICATION (indiv-application-person-one.html)
+----------------------------------- */
+ul#selectPerson { margin:0; }
+ul#selectPerson li { border-top:solid 1px #86b2d5;  }
+ul#selectPerson li a { background:#abc7e0 !important; border-left:solid 5px #7aabd0 !important; }
+	ul#selectPerson li.selected a, ul#selectPerson li a:hover  { color:#4092c3 !important; }
+/*ul#selectPerson li a:hover { background:url(../images/subnav_arrow.gif) no-repeat -1px center #abc7e0; color:#fff; padding-left:25px; }*/
+div#appForm .row { border-top:none !important; }
+div#appForm .row.bordertop { border-top:dashed 1px #b9b4b1 !important; margin-top:10px; }
+div#appForm input[type="checkbox"] { width:20px; }
+div#appForm .row .checkset {float:left; width:330px; margin:0 10px 0 0;}
+	div#appForm .row .checkset label.option { float:left; margin: 0 10px 0 0; width:100px; }
+div#appForm .row .option span { color:#4d4d4f; }
+
+.form2, .form3, .form4, .form5 { float:left; position:relative; margin-right:10px; }
+select.prefix { width:77px !important; }
+.form2 input, .form2 textarea, .form2 select { width:320px !important; }
+.form3 input, .form3 textarea, .form3 select { width:210px !important; }
+.form4 input, .form4 textarea, .form4 select { width:150px !important; }
 
 /* INDIVIDUAL PLAN REVIEW (indiv-plan-review.html)
 ----------------------------------- */
