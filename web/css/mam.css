@@ -431,6 +431,19 @@ select.prefix { width:77px !important; }
 .form3 input, .form3 textarea, .form3 select { width:210px !important; }
 .form4 input, .form4 textarea, .form4 select { width:150px !important; }
 
+
+/* INDIVIDUAL APPLICATION REVIEW (indiv-application-review.html)
+----------------------------------- */
+table.indivAppReview { width:100%; background:#fbefe7; margin:0 0 20px; }
+table.indivAppReview td { padding:3px 5px; vertical-align: bottom; }
+table.indivAppReview th { padding:5px; }
+table.indivAppReview tr { width:100%; }
+table.indivAppReview tr.topBlue { background:#7aabd0; color:#fff; font-size:12px; padding:10px; /*width:665px;*/ margin:0 0 20px; }
+table.indivAppReview tr.topOrange { background:#fcdfcb; font-size:14px; padding:10px; border-bottom: 1px dashed #d8cec7; }
+table.indivAppReview h6 { font-size:10px; color:#939598; text-transform: uppercase; font-family: "Avenir Medium", Helvetica, Arial, sans-serif; }
+table.indivAppReview tr.bottom td { border-bottom: 1px dashed #d8cec7; }
+
+
 /* INDIVIDUAL PLAN REVIEW (indiv-plan-review.html)
 ----------------------------------- */
 #mainContent ul#planReview li { background:#fbefe7; }
@@ -445,6 +458,22 @@ select.prefix { width:77px !important; }
 #mainContent ul#planReview li .optionRight ul li { margin:0; padding:0; }
 
 #mainContent ul.disclaimers li { font-size:12px; border-bottom:1px dashed #b9b4b1; padding:0 0 10px; }
+
+
+/* INDIVIDUAL PLAN CLOSED ENTRY (indiv-plan-closed-entry.html)
+----------------------------------- */
+#closedgraphic ul { margin:0; }
+#closedgraphic ul li { width:245px; height:229px; float:left; background:url(../images/closed-entry-bg.gif) no-repeat #b4cee3; }
+	#closedgraphic ul li.enrollmentclosed { background-position: 0 -10px; }
+	#closedgraphic ul li.justlooking { background-position: -246px -10px; background-color:#facca9; }
+	#closedgraphic ul li.needaplan { background-position: -491px -10px; }
+#closedgraphic ul li p { width:165px; color:#fff; margin:0; position: relative; top:100px; left: 30px; line-height: 1.45;  }
+
+#notneed p { font-size:12px; margin:0 0 10px; }
+#notneed label { font-size:10px; text-transform: uppercase; }
+#notneed input, #notneed select { width:170px; font-size:10px; margin-bottom:5px; }
+
+.qualifyingtext { font-size:10px; color:#e08130; line-height: 1.4; border-top: 1px dashed #d8cec7; padding:10px 0 0; margin:10px 0 15px; }
 
 
 /* FOOTER

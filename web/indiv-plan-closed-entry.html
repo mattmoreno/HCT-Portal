@@ -1,0 +1,97 @@
+<?php $meta_page = 'indiv-plan-closed-entry';
+$block_page = 'individual';
+$title_block = '';
+$desc_block = '';
+$keywords_block = '';
+include ('includes/doctype.php');  ?>
+<!--ADD ADDITIONAL PAGE-SPECIFIC SCRIPTS HERE-->   
+<script language="javascript">
+jQuery(document).ready(function($) {
+	$('ul#coverageSteps li').last().addClass("no-margin");
+});
+</script>   
+     
+</head>
+<body>
+<div class="container">
+
+    <!--HEADER-->
+    <?php include ('includes/header.php'); ?>
+    <!--/-->
+    
+    <!--LOGIN/LOGOUT-->
+    <?php include ('includes/login.php'); ?>
+    <!--/-->
+    
+    <!--CONTENT-->
+        <div id="content" class="clearfix">
+            <div id="content_left">
+	          	<div id="subnav">  
+	            	<h5>Find A Plan</h5>
+	            	<!--<ul id="sub_findPlan">
+	            		<li><a href="#" title="Start Your Application">Start Your Application</a></li>
+	            		<li class="selected"><a href="#" title="Complete Your Application">Complete Your Application</a></li>
+	            		<li><a href="#" title="Review + Apply">Review + Apply</a></li>
+	            	</ul>-->
+	          	</div>
+            </div><!--end content left-->
+            <div id="content_right">
+            	<div id="topInsideBar" class="clearfix">&nbsp;
+            	</div>
+            	<div id="closedgraphic">
+	            	<ul class="clearfix">
+	            		<li class="enrollmentclosed">
+	            			<p>Open enrollment <br />is now closed. The <br />next enrollment <br />period: October 15 thru December 7, 2014.</p>
+	            		</li>
+	            		<li class="justlooking">
+	            			<p>You can browse <br />and compare plans <br />any time! Come <br />back to enroll <br />during open enrollment.</p>
+	            		</li>
+	            		<li class="needaplan">
+	            			<p>You may not <br />need to wait! <br />Qualifying events <br />such as marriage or a job loss may allow you to apply now.</p>
+	            		</li>
+	            	</ul>
+            	</div>
+            	<div id="mainContent">
+            		<div class="mainLeft">
+		            	<div class="blueHeader">Enrollment Is Currently Closed</div>
+		            	<p>During open enrollment, individuals and families may change health care or dental plans and add or drop coverage for family members. This is the only time individuals may enroll in or change a health plan.These changes are not possible at other times unless an individual experiences a qualifying event, such as marriage, divorce, birth, adoption, or loss of other health insurance coverage. Those that have a qualifying event may need to submit documentation regarding their event.</p>
+            		</div>
+            		<div id="notneed" class="mainRight">
+		            	<div class="orangeHeader">You May Not Need to Wait</div>
+		            	<p>Select the qualifying event that occurred in the last 30 days:</p>
+		            	<div class="row">
+							<label for="event">Event</label>
+							<select id="selectList">
+								<option value="#">Marriage</option>
+								<option value="#">Event</option>
+								<option value="#">My Event</option>
+								<option value="#">The Event</option>
+							</select>
+						</div>
+						<div class="row">
+							<label for="dateevent">Date of Event</label>
+							<input type="text" id="dateevent" />
+						</div>
+						<div class="qualifyingtext">
+							Your qualifying event is marriage. You will need to submit your marriage license before coverage becomes effective.
+						</div>
+            		</div>
+		            
+		            <ul id="familyPlanButtons" class="clearfix blueBar">
+		            	<li><a href="#" class="button">&#10094; Back</a></li>
+		            	<li class="last right"><a href="#" class="button">Next &#10095;</a></li>
+		            </ul>
+		            
+            	</div><!-- end main content -->
+            </div><!--end content right-->   
+        </div><!--END content-->
+    <!--/-->
+    
+    
+    
+    <!--FOOTER--> 
+    <?php include ('includes/footer.php'); ?>
+    <!--/-->
+   
+</body>
+</html>
