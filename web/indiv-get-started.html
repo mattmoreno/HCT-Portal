@@ -1,0 +1,74 @@
+<?php $meta_page = 'indiv-get-started';
+$block_page = 'individual';
+$title_block = '';
+$desc_block = '';
+$keywords_block = '';
+include ('includes/doctype.php');  ?>
+<!--ADD ADDITIONAL PAGE-SPECIFIC SCRIPTS HERE-->   
+<script language="javascript">
+jQuery(document).ready(function($) {
+	$('ul#coverageSteps li').last().addClass("no-margin");
+});
+</script>   
+     
+</head>
+<body>
+<div class="container">
+
+    <!--HEADER-->
+    <?php include ('includes/header.php'); ?>
+    <!--/-->
+    
+    <!--LOGIN/LOGOUT-->
+    <?php include ('includes/login.php'); ?>
+    <!--/-->
+    
+    <!--CONTENT-->
+        <div id="content" class="clearfix">
+            <div id="content_left">
+	          	<div id="subnav">  
+	            	<h5>Find a Plan</h5>
+	            	<ul id="sub_findPlan">
+	            		<li class="selected"><a href="#" title="Getting Started">Getting Started</a></li>
+	            		<li><a href="#" title="View Plan Options">View Plan Options</a></li>
+	            	</ul>
+	          	</div>
+            </div><!--end content left-->
+            <div id="content_right">
+            	<div id="topInsideBar" class="clearfix">&nbsp;
+            	</div>
+            	<div id="lrgOrangeHeader">Who Will Be On The Plan</div>
+            	<div id="mainContent">
+	            	<ul id="coverageSteps" class="clearfix">
+	            		<li class="planIndivFamily1">
+	            			<h4>Myself Only <input type="radio" name="myselfonly" id="regularRadio" value="Myself Only" /></h4>
+	            			<p>If the plan coverage is only for you, choose this option</p>
+	            		</li>
+	            		<li class="planIndivFamily2">
+	            			<h4>Myself and My Family <input type="radio" name="myselfandfamily" id="regularRadio" value="Myself and My Family" /></h4>
+	            			<p>If the plan coverage is for you <strong>and</strong> other family or household members such as your partner, your spouse, or your children, choose this option.</p>
+	            		</li>
+	            		<li class="planIndivFamily3">
+	            			<h4>My Children Only <input type="radio" name="childrenonly" id="regularRadio" value="Children Only" /></h4>
+	            			<p>If you need coverage just for dependent children, but not for yourself, choose this option.</p>
+	            		</li>
+	            	</ul>
+		            
+		            <ul id="familyPlanButtons" class="clearfix">
+		            	<li><a href="#" class="button">&#10094; Back</a></li>
+		            	<li class="last right"><a href="indiv-create-account.html" class="button">Next &#10095;</a></li>
+		            </ul>
+		            
+            	</div><!-- end main content -->
+            </div><!--end content right-->   
+        </div><!--END content-->
+    <!--/-->
+    
+    
+    
+    <!--FOOTER--> 
+    <?php include ('includes/footer.php'); ?>
+    <!--/-->
+   
+</body>
+</html>
