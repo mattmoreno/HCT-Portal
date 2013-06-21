@@ -1,0 +1,132 @@
+<?php $meta_page = 'broker-agreement';
+$block_page = 'broker';
+$title_block = '';
+$desc_block = '';
+$keywords_block = '';
+include ('includes/doctype.php');  ?>
+<!--ADD ADDITIONAL PAGE-SPECIFIC SCRIPTS HERE-->   
+<script language="javascript">
+jQuery(document).ready(function($) {
+	$('ul#coverageSteps li').last().addClass("no-margin");
+});
+</script>   
+     
+</head>
+<body>
+<div class="container">
+
+    <!--HEADER-->
+    <?php include ('includes/header.php'); ?>
+    <!--/-->
+    
+    <!--LOGIN/LOGOUT-->
+    <?php include ('includes/login.php'); ?>
+    <!--/-->
+    
+    <!--CONTENT-->
+        <div id="content" class="clearfix">
+            <div id="content_left">
+	          	<div id="subnav">  
+	            	<h5>For Brokers</h5>
+	            	<!--<ul id="sub_findPlan">
+	            		<li><a href="#" title="Start Your Application">Start Your Application</a></li>
+	            		<li><a href="#" title="Complete Your Application">Complete Your Application</a></li>
+	            		<li class="selected"><a href="#" title="Review + Apply">Review + Apply</a></li>
+	            	</ul>-->
+	          	</div>
+            </div><!--end content left-->
+            <div id="content_right">
+            	<div id="topInsideBar" class="clearfix">&nbsp;
+            	</div>
+            	<div id="mainContent">
+	            	<h3>Please accept our agreement to complete application</h3>
+	            	<p>Before you continue, please read and check that you have accepted our user agreement. The legal copy is below, but here's a quick, unofficial summary:</p>
+	            	<ul class="disc">
+	            		<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+	            		<li>In ultricies sapien eget tellus posuere.</li>
+	            	</ul>
+	            	
+	            	<div class="blueHeader">User Agreement</div>
+		            
+		            <div id="appForm" class="clearfix" action="#">
+		            	
+		            	<fieldset class="no-margin"> 
+			            	
+			            	<div class="row">
+									<div id="privacyAgreeText">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut egestas dictum placerat. Phasellus risus nisi, bibendum faucibus gravida vitae, laoreet in tortor. Curabitur lectus sapien, eleifend ut dictum vel, facilisis nec felis. Vivamus auctor pharetra mi, in gravida libero adipiscing nec. Vivamus in magna ante, id dictum ante. Fusce non ligula non dui interdum dapibus a at diam. Maecenas cursus eros ac ligula auctor et feugiat ligula faucibus. Cras magna turpis, sodales vel condimentum nec, mattis non magna.</p>
+
+										<p>Donec in pulvinar dui. In vel orci ut urna rutrum pretium et ut orci. Donec id purus consectetur turpis fringilla pellentesque. Integer mauris mauris, commodo sit amet varius a, aliquet eget sem. Praesent semper ornare lacus, vel convallis nulla adipiscing ac. Nulla sagittis facilisis augue sit amet blandit. Ut sed imperdiet elit. In laoreet, nisi et faucibus fermentum, mi velit sodales est, non adipiscing turpis augue in ante. Nullam quis turpis sapien, dapibus pretium ante. In a lectus mi. Ut pulvinar elit eget ipsum congue fringilla. Nulla at urna ut est posuere facilisis.</p>
+
+										<p>Nullam auctor adipiscing nisi. Nunc tincidunt leo sit amet metus imperdiet placerat. Donec nulla est, malesuada vehicula convallis vitae, faucibus eu diam. Nulla non lorem ut erat cursus lacinia vitae interdum mauris. Pellentesque quis ullamcorper lorem. Proin iaculis sapien id mi pretium dictum rhoncus nisi adipiscing. Curabitur molestie hendrerit eros sed ultrices. Quisque mi neque, aliquet nec venenatis et, lobortis quis odio. Mauris eget vehicula quam. Vivamus lorem eros, aliquet eu pulvinar quis, varius iaculis sapien.</p>
+
+										<p>Maecenas iaculis hendrerit massa a eleifend. Fusce volutpat dictum rhoncus. Etiam tempor malesuada porta. Suspendisse potenti. Nunc porta libero et sapien molestie lacinia. Curabitur mi risus, commodo id porttitor sed, fringilla ac diam. Maecenas a odio at ligula tempus scelerisque at sit amet neque. Suspendisse dui felis, rhoncus id malesuada quis, pulvinar et nibh. Mauris vel nibh et neque fermentum aliquam a ac purus. Quisque eleifend aliquam cursus. Etiam non malesuada massa. Nunc aliquet enim vitae lacus bibendum vitae volutpat massa faucibus. Nullam id odio orci. Suspendisse ultricies tincidunt luctus.</p>
+
+										<p>Suspendisse erat diam, tempus vitae fermentum et, imperdiet id urna. Praesent leo justo, gravida nec varius non, convallis porta eros. Cras consectetur aliquet orci, non sollicitudin eros consequat vel. Curabitur fringilla, mi et molestie euismod, nibh velit commodo arcu, id bibendum nibh elit ullamcorper ante. Phasellus interdum orci id eros fermentum a consectetur tellus ullamcorper. Sed imperdiet, enim sed ultrices vestibulum, augue tellus rhoncus velit, quis consectetur elit elit nec dui. Etiam id lectus a lacus gravida volutpat. Vivamus neque nulla, bibendum ut dignissim sed, condimentum non ligula. In porta ante augue. Proin auctor lobortis neque et eleifend. Curabitur ac arcu risus, quis malesuada diam. Maecenas sed placerat mi. Nulla facilisi. Suspendisse vulputate, felis consequat pellentesque porttitor, neque lorem lobortis nulla, et lobortis erat libero quis nibh. Phasellus enim quam, viverra nec tincidunt ac, tincidunt non purus.</p>
+									</div>
+							</div>
+							</fieldset>
+							
+							<fieldset>
+							<div class="row forCheckbox">
+									<label for="agree">
+										<input type="checkbox" name="agree" id="agree" value="I agree">
+										<span>I have read and agree to the User Agreemenet.</span>
+									</label>
+							</div>
+							<div class="row forCheckbox">
+									<label for="agreefile">
+										<input type="checkbox" name="agreefile" id="agreefile" value="I agree to file">
+										<span>I agree to file a 2014 Premium Tax (Need remaining info here)</span>
+									</label>
+							</div>
+							</fieldset>
+							
+							<fieldset>
+							<div class="row">
+			            		<div class="form2">
+									<label for="esig">E-Signature (please type your full name)</label>
+									<input type="text" id="esig" />
+			            		</div>
+			            		<div class="form2">
+									<label for="ss">Social Security Number</label>
+									<input type="text" id="ss" />
+			            		</div>
+							</div>
+							<div class="row">
+								<p class="orange">Your application will be submitted when you click apply.</p>
+							</div>
+							</fieldset>
+						
+		            </div>
+						
+							 
+		            	
+		            	<ul id="mainButtons" class="clearfix blueBar">
+			            	<li class="larrow"><a href="#" class="button">&#10094; Back</a></li>
+			            	<li><a href="#" class="button">Cancel Application</a></li>
+			            	<li class="rarrow last right"><a href="indiv-application-person-two.html" class="button">Submit &#10095;</a></li>
+			            </ul>
+		            	
+		            	<div id="norton">
+		            		<img src="images/logo_norton.gif" alt="logo_norton" />
+		            	</div>
+
+ 
+		            </div>
+		            
+	
+		            
+            	</div><!-- end main content -->
+            </div><!--end content right-->   
+        </div><!--END content-->
+    <!--/-->
+    
+    
+    
+    <!--FOOTER--> 
+    <?php include ('includes/footer.php'); ?>
+    <!--/-->
+   
+</body>
+</html>

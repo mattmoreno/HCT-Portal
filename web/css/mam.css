@@ -387,6 +387,12 @@ ul#coverageSteps li  { margin:0 25px 0 0; padding:150px 0 0; float:left; width:2
 	ul#coverageSteps li.planIndivFamily1 { background:url(../images/planIndivFamily1.gif) no-repeat center top; }
 	ul#coverageSteps li.planIndivFamily2 { background:url(../images/planIndivFamily2.gif) no-repeat center top; }
 	ul#coverageSteps li.planIndivFamily3 { background:url(../images/planIndivFamily3.gif) no-repeat center top; }
+	ul#coverageSteps li.brokerRegistration1 { background:url(../images/brokerRegistration1.gif) no-repeat center top; }
+	ul#coverageSteps li.brokerRegistration2 { background:url(../images/brokerRegistration2.gif) no-repeat center top; }
+	ul#coverageSteps li.brokerRegistration3 { background:url(../images/brokerRegistration3.gif) no-repeat center top; }
+ul#coverageSteps li ul  { margin:0 0 5px; border-bottom:none; }
+ul#coverageSteps li ul li  { margin:0 0 5px; padding:0 0 0 20px; float:none; width:auto; }
+
 ul#coverageSteps li h4 { font-family: "Avenir Medium", Helvetica, Arial, sans-serif; background:#7aabd0; color:#fff; font-size:14px; padding:7px; line-height:normal; }
 
 
@@ -432,12 +438,14 @@ div#appForm .row.bordertop { border-top:dashed 1px #b9b4b1 !important; margin-to
 div#appForm input[type="checkbox"] { width:20px; }
 div#appForm .row .checkset {float:left; width:330px; margin:0 10px 0 0;}
 	div#appForm .row .checkset label.option { float:left; margin: 0 10px 0 0; width:100px; }
+div#appForm .row .checkset4 { margin:0 10px 0 0;}
+	div#appForm .row .checkset4 label.option { float:left; margin: 0 10px 0 0; width:155px; }
 div#appForm .row .option span { color:#4d4d4f; }
 
 .form2, .form3, .form4, .form5 { float:left; position:relative; margin-right:10px; }
 select.prefix { width:77px !important; }
-.form2 input, .form2 textarea, .form2 select { width:320px !important; }
-.form3 input, .form3 textarea, .form3 select { width:210px !important; }
+.form2 input, .form2 textarea, .form2 select { width:318px !important; }
+.form3 input, .form3 textarea, .form3 select { width:208px !important; }
 .form4 input, .form4 textarea, .form4 select { width:150px !important; }
 
 
@@ -501,6 +509,13 @@ table.indivAppReview tr.bottom td { border-bottom: 1px dashed #d8cec7; }
 /* INDIVIDUAL GET STARTED (indiv-get-started.html)
 ----------------------------------- */
 #coverageSteps li h4 input[type="radio"] { float:right; }
+
+
+/* BROKER SELECTIONS (broker-selections.html)
+----------------------------------- */
+#fieldCenter { margin:15px auto 0; text-align:center; width:150px; }
+#fieldCenter select { width:100px; margin:0; float:left; }
+#fieldCenter input { margin:2px 0 0; }
 
 
 /* FOOTER

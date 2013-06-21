@@ -1,0 +1,272 @@
+<?php $meta_page = 'broker-employer-data';
+$block_page = 'broker';
+$title_block = '';
+$desc_block = '';
+$keywords_block = '';
+include ('includes/doctype.php');  ?>
+<!--ADD ADDITIONAL PAGE-SPECIFIC SCRIPTS HERE-->   
+<script language="javascript">
+jQuery(document).ready(function($) {
+	//ENTER SCRIPTS HERE
+	$(".formhalf").hover(
+	  function () {
+	    $(this).find(".tooltip:first").css("display", "block");
+	  },
+	  function () {
+	    $(this).find(".tooltip:first").css("display", "none");
+	  }
+	);	
+});
+</script>   
+     
+</head>
+<body>
+<div class="container">
+
+    <!--HEADER-->
+    <?php include ('includes/header.php'); ?>
+    <!--/-->
+    
+    <!--LOGIN/LOGOUT-->
+    <?php include ('includes/login.php'); ?>
+    <!--/-->
+    
+    <!--CONTENT-->
+        <div id="content" class="clearfix">
+            <div id="content_left">
+	          	<div id="subnav">  
+	            	<h5>For Brokers</h5>
+	            	<!--<ul id="sub_findPlan">
+	            		<li><a href="#" title="Start Your Application">Start Your Application</a></li>
+	            		<li class="selected"><a href="#" title="Complete Your Application">Complete Your Application</a>
+	            			<ul id="selectPerson">
+	            				<li class="selected"><a href="#" title="Person One">Person One</a></li>
+	            				<li><a href="#" title="Person Two">Person Two</a></li>
+	            				<li><a href="#" title="Person Three">Person Three</a></li>
+	            			</ul>
+	            		</li>
+	            		<li><a href="#" title="Review + Apply">Review + Apply</a></li>
+	            	</ul>-->
+	          	</div>
+            </div><!--end content left-->
+            <div id="content_right">
+            	<div id="topInsideBar" class="clearfix">
+            		&nbsp;
+            	</div>
+            	
+            	<div id="topInsideBarError" class="clearfix hidden">
+            		Please enter your zip code
+            	</div>
+            	<div id="mainContent">
+	            	<h3>Enter Employer Information</h3>
+	            	<p>Please enter employer information below.</p>
+		            <small class="right">Required<span class="required">*</span></small>
+		            
+		            <div id="appForm" action="#">
+		            	<fieldset> 
+			            	<legend>Employer Information</legend>
+			            	
+			            	<div class="row">
+			            		<div class="form2">
+									<label for="groupname">Group Name<span class="required">*</span></label>
+									<input type="text" id="groupname" />
+			            		</div>
+			            		<div class="form2">
+									<label for="ein">EIN<span class="required">*</span></label>
+									<input type="text" id="ein" />
+			            		</div>
+							</div>
+		            	</fieldset>
+		            	
+		            	<fieldset> 
+			            	<legend>Contact Name</legend>
+			            	
+			            	<div class="row">
+			            		<div class="form4">
+									<label for="prefix">Prefix</label>
+									<select id="selectList" class="prefix">
+										<option value="Option 1">Mr.</option>
+										<option value="Option 2">Mrs.</option>
+									</select>
+			            		</div>
+			            		<div class="form4">
+									<label for="firstname">First Name<span class="required">*</span></label>
+									<input type="text" id="firstname" />
+			            		</div>
+			            		<div class="form4">
+									<label for="middlename">Middle Name<span class="required">*</span></label>
+									<input type="text" id="middlename" />
+			            		</div>
+			            		<div class="form4">
+									<label for="lastname">Last Name<span class="required">*</span></label>
+									<input type="text" id="firstname" />
+			            		</div>
+							</div>
+			            	
+							<div class="row">
+			            		<div class="form3">
+									<label for="phone">Phone Number<span class="required">*</span></label>
+									<input type="text" id="homephone" />
+			            		</div>
+			            		<div class="form3">
+									<label for="fax">Fax<span class="required">*</span></label>
+									<input type="text" id="fax" />
+			            		</div>
+			            		<div class="form3">
+									<label for="email">Email<span class="required">*</span></label>
+									<input type="text" id="email" />
+			            		</div>
+							</div>
+		            	</fieldset>
+		            	
+		            	<fieldset> 
+			            	<legend>Billing Address</legend>
+			            	
+			            	<div class="row forCheckbox">
+									<label for="sameaddress">
+										<input type="checkbox" name="sameaddress" id="sameaddress" value="Same Address">
+										<span>Same As Mailing Address</span>
+									</label>
+							</div>
+			            	
+			            	<div class="row">
+			            		<div class="form2">
+									<label for="address">Address Line 1<span class="required">*</span></label>
+									<input type="text" id="address" />
+			            		</div>
+			            		<div class="form2">
+									<label for="address2">Address Line 2</label>
+									<input type="text" id="address2" />
+			            		</div>
+							</div>
+							
+							<div class="row">
+			            		<div class="form3">
+									<label for="city">City<span class="required">*</span></label>
+									<input type="text" id="city" />
+			            		</div>
+			            		<div class="form3">
+									<label for="state">State<span class="required">*</span></label>
+									<select id="selectList">
+										<option value="AL">Alabama</option>
+										<option value="AK">Alaska</option>
+										<option value="AZ">Arizona</option>
+										<option value="AR">Arkansas</option>
+										<option value="CA">California</option>
+										<option value="CO">Colorado</option>
+										<option value="CT">Connecticut</option>
+										<option value="DE">Delaware</option>
+										<option value="DC">Dist of Columbia</option>
+										<option value="FL">Florida</option>
+										<option value="GA">Georgia</option>
+										<option value="HI">Hawaii</option>
+										<option value="ID">Idaho</option>
+										<option value="IL">Illinois</option>
+										<option value="IN">Indiana</option>
+										<option value="IA">Iowa</option>
+										<option value="KS">Kansas</option>
+										<option value="KY">Kentucky</option>
+										<option value="LA">Louisiana</option>
+										<option value="ME">Maine</option>
+										<option value="MD">Maryland</option>
+										<option value="MA">Massachusetts</option>
+										<option value="MI">Michigan</option>
+										<option value="MN">Minnesota</option>
+										<option value="MS">Mississippi</option>
+										<option value="MO">Missouri</option>
+										<option value="MT">Montana</option>
+										<option value="NE">Nebraska</option>
+										<option value="NV">Nevada</option>
+										<option value="NH">New Hampshire</option>
+										<option value="NJ">New Jersey</option>
+										<option value="NM">New Mexico</option>
+										<option value="NY">New York</option>
+										<option value="NC">North Carolina</option>
+										<option value="ND">North Dakota</option>
+										<option value="OH">Ohio</option>
+										<option value="OK">Oklahoma</option>
+										<option value="OR">Oregon</option>
+										<option value="PA">Pennsylvania</option>
+										<option value="RI">Rhode Island</option>
+										<option value="SC">South Carolina</option>
+										<option value="SD">South Dakota</option>
+										<option value="TN">Tennessee</option>
+										<option value="TX">Texas</option>
+										<option value="UT">Utah</option>
+										<option value="VT">Vermont</option>
+										<option value="VA">Virginia</option>
+										<option value="WA">Washington</option>
+										<option value="WV">West Virginia</option>
+										<option value="WI">Wisconsin</option>
+										<option value="WY">Wyoming</option>
+									</select>
+			            		</div>
+			            		<div class="form3">
+									<label for="zipcode">Zip<span class="required">*</span></label>
+									<input type="text" id="zipcode" />
+			            		</div>
+							</div>
+		            	</fieldset>
+		            	
+		            	<fieldset> 
+			            	<legend>Enter Plan Selections</legend>
+			            	<div class="row">
+			            		<div class="checkset4">
+									    <label class="option" for="regularCheckbox">
+									      <input type="checkbox" name="HCTPlanA" id="regularCheckbox" value="HCT Plan A" />
+									      <span>HCT Plan A</span>
+									    </label>
+									    <label class="option" for="regularCheckbox">
+									      <input type="checkbox" name="HCTPlanB" id="regularCheckbox" value="HCT Plan B" />
+									      <span>HCT Plan B</span>
+									    </label>
+									    <label class="option" for="regularCheckbox">
+									      <input type="checkbox" name="HCTPlanC" id="regularCheckbox" value="HCT Plan C" />
+									      <span>HCT Plan C</span>
+									    </label>
+									    <label class="option" for="regularCheckbox">
+									      <input type="checkbox" name="HCTPlanD" id="regularCheckbox" value="HCT Plan D" />
+									      <span>HCT Plan D</span>
+									    </label>
+									    <label class="option" for="regularCheckbox">
+									      <input type="checkbox" name="HCTPlanE" id="regularCheckbox" value="HCT Plan E" />
+									      <span>HCT Plan E</span>
+									    </label>
+									    <label class="option" for="regularCheckbox">
+									      <input type="checkbox" name="HCTPlanF" id="regularCheckbox" value="HCT Plan F" />
+									      <span>HCT Plan F</span>
+									    </label>
+									    <label class="option" for="regularCheckbox">
+									      <input type="checkbox" name="HCTPlanG" id="regularCheckbox" value="HCT Plan G" />
+									      <span>HCT Plan G</span>
+									    </label>
+									    <label class="option" for="regularCheckbox">
+									      <input type="checkbox" name="HCTPlanH" id="regularCheckbox" value="HCT Plan H" />
+									      <span>HCT Plan H</span>
+									    </label>
+								</div>
+								
+							</div>
+		            	</fieldset>
+		            	
+		            	
+		            </div>
+		            
+		            <ul id="mainButtons" class="clearfix blueBar">
+		            	<li class="larrow"><a href="#" class="button">&#10094; Go Back</a></li>
+		            	<li class="rarrow last right"><a href="indiv-application-person-two.html" class="button">Submit &#10095;</a></li>
+		            </ul>
+		            
+            	</div><!-- end main content -->
+            </div><!--end content right-->   
+        </div><!--END content-->
+    <!--/-->
+    
+    
+    
+    <!--FOOTER--> 
+    <?php include ('includes/footer.php'); ?>
+    <!--/-->
+   
+</body>
+</html>
