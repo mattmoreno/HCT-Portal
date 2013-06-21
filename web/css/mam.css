@@ -518,6 +518,38 @@ table.indivAppReview tr.bottom td { border-bottom: 1px dashed #d8cec7; }
 #fieldCenter input { margin:2px 0 0; }
 
 
+/* BROKER SAVED QUOTES (broker-saved-quotes.html)
+----------------------------------- */
+#mainContent ul#savedquotes { background:#fbefe7; border-bottom:1px dashed #b9b4b1; padding:20px 10px; }
+#mainContent ul#savedquotes li { margin:0; }
+#mainContent ul#savedquotes a { color:#e08130; }
+.savedcol1, .savedcol2, .savedcol3, .savedcol4 { float:left; padding:0 20px 0 0; margin:0 20px 0 0; border-right:dashed 1px #b9b4b1; font-size:12px;  }
+.savedcol1 input[type="text"] { width:180px; float:left; margin:0 10px 0 0; }
+.savedcol2 select { width:100px; margin:0; }
+
+table#savedquotestable { margin:0 0 20px; }
+table#savedquotestable tr { background:#fbefe7; }
+table#savedquotestable tr.alt { background:#dce5ee; }
+table#savedquotestable th { background:#dce5ee; text-align: center; text-transform: uppercase; font-size:10px; line-height:1.4; padding:10px; vertical-align: middle; border-bottom:dashed 1px #b9b4b1; }
+table#savedquotestable td { text-align: center; font-size:13px; padding:10px; border-bottom:dashed 1px #b9b4b1; }
+
+.bluePlus { margin:0 0 20px; background:url(../images/icon_plusSignBlue.png) no-repeat; }
+.bluePlus a { color:#97bcda; text-transform: uppercase; font-size:11px; text-decoration: none; padding:0 0 0 20px; }
+
+
+/* BROKER SAVED APPLICATIONS (broker-saved-applications.html)
+----------------------------------- */
+#mainContent ul#savedapplications { background:#dce5ee; border-bottom:1px dashed #b9b4b1; padding:20px 10px; }
+#mainContent ul#savedapplications li { margin:0; }
+#mainContent ul#savedapplications a { color:#7babd0; }
+
+table#savedapplicationstable { margin:0 0 20px; }
+table#savedapplicationstable tr { background:#dce5ee; }
+table#savedapplicationstable tr.alt { background:#fbefe7; }
+table#savedapplicationstable th { background:#fbefe7; text-align: center; text-transform: uppercase; font-size:10px; line-height:1.4; padding:10px; vertical-align: middle; border-bottom:dashed 1px #b9b4b1; }
+table#savedapplicationstable td { text-align: center; font-size:13px; padding:10px; border-bottom:dashed 1px #b9b4b1; }
+
+
 /* FOOTER
 ----------------------------------- */
 #footer{ width:100%; background:#7aabd0; text-align: center; padding:20px 0; color:#fff; }
