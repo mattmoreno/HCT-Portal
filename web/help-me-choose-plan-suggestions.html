@@ -1,0 +1,155 @@
+<?php $meta_page = 'plan-suggestions';
+$block_page = 'help-me-choose';
+$title_block = '';
+$desc_block = '';
+$keywords_block = '';
+include ('includes/doctype.php');  ?>
+<!--ADD ADDITIONAL PAGE-SPECIFIC SCRIPTS HERE-->   
+<script language="javascript">
+jQuery(document).ready(function($) {
+	//ENTER SCRIPTS HERE
+});
+</script>   
+     
+</head>
+<body>
+<div class="container">
+
+    <!--HEADER-->
+    <?php include ('includes/header.php'); ?>
+    <!--/-->
+    
+    <!--LOGIN/LOGOUT-->
+    <?php include ('includes/login.php'); ?>
+    <!--/-->
+    
+    <!--CONTENT-->
+        <div id="content" class="clearfix">
+            <div id="content_left">
+	          	<div id="subnav">  
+	            	<h5>Find a Plan</h5>
+	            	<ul id="sub_findPlan">
+	            		<li><a href="index.html" title="Getting Started">Getting Started</a></li>
+	            		<li class="selected"><a href="plan-options.html" title="View Plan Options">Plan Options</a></li>
+	            	</ul>
+	          	</div>
+            </div><!--end content left-->
+            <div id="content_right">
+            	<div id="topInsideBar" class="clearfix">
+            		<ul id="rightInsideBtns">
+            			<li class="print"><a href="#">Print</a></li>
+            		</ul>
+            	</div>
+            	<div id="mainContent">
+		            
+		            <ul id="planSuggestion">
+		            	<li class="orangeSuggestion clearfix">
+		            			<div class="planOption">Plan Option One</div>
+		            			<div class="optionTop clearfix">
+			            			<div class="planTitle">Healthy Partner<br />Preferred Pro</div>
+			            			<div class="planDetails">
+			            				<a href="#">Plan Details <img src="images/li_orangeArrow.gif" alt="li_orangeArrow" /></a>
+			            			</div>
+		            			</div>
+		            			<div class="suggestionBox clearfix">
+	            					<h6>About the Plan</h6>
+		            				<p>Short Plan description here or benefits in plain english for the average person who may not be savvy as to insurance products.</p>
+		            			</div>
+		            			<div class="suggestionBox clearfix">
+		            				<h6>Office Visits</h6>
+	            					<ul class="left">
+		            					<li>PC Copay</li>
+		            					<li>Specialist Copay</li>
+		            					<li>Outpatient Surgery</li>
+		            				</ul>
+		            				<ul class="right">
+		            					<li>$15</li>
+		            					<li>$25</li>
+		            					<li>$75</li>
+		            				</ul>
+		            			</div>
+		            			<div class="suggestionBox">
+		            				<a href="#" title="Select Plan"><img src="images/icon_compareSelectPlan.png" /></a>
+		            			</div>
+		            	</li>
+		            	
+		            	<li class="blueSuggestion clearfix">
+		            			<div class="planOption">Plan Option Two</div>
+		            			<div class="optionTop clearfix">
+			            			<div class="planTitle">Healthy Partner<br />Max 1</div>
+			            			<div class="planDetails">
+			            				<a href="#">Plan Details <img src="images/li_orangeArrow.gif" alt="li_orangeArrow" /></a>
+			            			</div>
+		            			</div>
+		            			<div class="suggestionBox clearfix">
+	            					<h6>About the Plan</h6>
+		            				<p>Short Plan description here or benefits in plain english for the average person who may not be savvy as to insurance products.</p>
+		            			</div>
+		            			<div class="suggestionBox clearfix">
+		            				<h6>Office Visits</h6>
+	            					<ul class="left">
+		            					<li>PC Copay</li>
+		            					<li>Specialist Copay</li>
+		            					<li>Outpatient Surgery</li>
+		            				</ul>
+		            				<ul class="right">
+		            					<li>$15</li>
+		            					<li>$25</li>
+		            					<li>$75</li>
+		            				</ul>
+		            			</div>
+		            			<div class="suggestionBox">
+		            				<a href="#" title="Select Plan"><img src="images/icon_compareSelectPlan.png" /></a>
+		            			</div>
+		            	</li>
+		            	
+		            	<li class="graySuggestion clearfix">
+		            			<div class="planOption">Plan Option Three</div>
+		            			<div class="optionTop clearfix">
+			            			<div class="planTitle">Healthy Partner<br />Basic Plus</div>
+			            			<div class="planDetails">
+			            				<a href="#">Plan Details <img src="images/li_orangeArrow.gif" alt="li_orangeArrow" /></a>
+			            			</div>
+		            			</div>
+		            			<div class="suggestionBox clearfix">
+	            					<h6>About the Plan</h6>
+		            				<p>Short Plan description here or benefits in plain english for the average person who may not be savvy as to insurance products.</p>
+		            			</div>
+		            			<div class="suggestionBox clearfix">
+		            				<h6>Office Visits</h6>
+	            					<ul class="left">
+		            					<li>PC Copay</li>
+		            					<li>Specialist Copay</li>
+		            					<li>Outpatient Surgery</li>
+		            				</ul>
+		            				<ul class="right">
+		            					<li>$15</li>
+		            					<li>$25</li>
+		            					<li>40%</li>
+		            				</ul>
+		            			</div>
+		            			<div class="suggestionBox">
+		            				<a href="#" title="Select Plan"><img src="images/icon_compareSelectPlan.png" /></a>
+		            			</div>
+		            	</li>
+		            	
+		            </ul>
+		            
+		            <ul id="mainButtons" class="clearfix">
+		            	<li class="larrow"><a href="#" class="button">See All Plans</a></li>
+		            	<li class="last right"><a href="#" class="button">View My Plan Selections</a></li>
+		            </ul>
+		            
+            	</div><!-- end main content -->
+            </div><!--end content right-->   
+        </div><!--END content-->
+    <!--/-->
+    
+    
+    
+    <!--FOOTER--> 
+    <?php include ('includes/footer.php'); ?>
+    <!--/-->
+   
+</body>
+</html>

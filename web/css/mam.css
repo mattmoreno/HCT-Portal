@@ -550,6 +550,129 @@ table#savedapplicationstable th { background:#fbefe7; text-align: center; text-t
 table#savedapplicationstable td { text-align: center; font-size:13px; padding:10px; border-bottom:dashed 1px #b9b4b1; }
 
 
+/* SMALL BUSINESS RATE DETAIL (sm-biz-rate-detail.html)
+----------------------------------- */
+.calculator { background:#fbebe0; padding:10px; font-size:10px; text-transform:uppercase; margin:0 0 20px; }
+.calcCol { float:left; border-right:1px dashed #a29d9c; padding-right:20px; margin-right:20px; }
+	.calcCol.last { margin:0; padding:0; border:none; }
+.calcCol h6 { font-family: "Avenir Medium", Helvetica, Arial, sans-serif; font-size:10px; color:#e08230; border-bottom:1px dashed #a29d9c; margin:0 0 25px; }
+.calcCol .slider { float:left; }
+.calcCol ul { text-align:center; }
+.calcCol.calculate { margin-top:65px; }
+.calcCol.calculate a { font-size:12px; color:#e08230; text-decoration: none; text-transform: none; }
+.calcCol.calculate a img { position:relative; top:3px; }
+
+#mainContent ul#planContribution { margin:0 0 30px; text-transform: uppercase; font-size:10px; background:#e9eef3; }
+#mainContent ul#planContribution li { padding:10px; border-bottom:dashed 1px #b9b4b1; margin:0; }
+#mainContent ul#planContribution * li { border-bottom:none; }
+#mainContent ul#planContribution li .optionTop { margin:0 0 10px; }
+#mainContent ul#planContribution li .optionLeft { float:left;}
+#mainContent ul#planContribution li .optionRight { float:right; border-left:dashed 1px #b9b4b1; width:97px; padding:0 0 0 15px;}
+
+#mainContent ul#planContribution li h5 { font-family: "Avenir Medium", Helvetica, Arial, sans-serif; font-size:11px; color:#7babd0; border-bottom:1px dashed #a29d9c; margin:0 0 25px; }
+#mainContent ul#planContribution li .planTitle { font-size:18px; float:left; width:370px; text-transform: none; line-height:1.4; margin:0 30px 0 0; }
+	#mainContent ul#planContribution li .planTitle small { color:#7babd0; font-size:14px !important; }
+#mainContent ul#planContribution li .planPremium { float:left; width:230px; padding:0 0 0 15px; border-left:dashed 1px #b9b4b1; font-size:10px; }
+	#mainContent ul#planContribution li .planPremium ul { margin:0 20px 0 0; float:left; }
+	#mainContent ul#planContribution li .planPremium ul li { margin:0; padding:5px; }
+		#mainContent ul#planContribution li .planPremium ul li.total { border-top:1px dashed #ad9d9c; }
+#mainContent ul#planContribution li .planPremium ul.planPremiumRight { font-size:18px; color:#7babd0; }
+
+table#contributionDetails { margin:0 0 20px; }
+table#contributionDetails tr { background:#dce5ee; }
+	table#contributionDetails tr.trgray { background:#747577; color:#fff; }
+	table#contributionDetails tr.trdorange { background:#fce2d0; }
+	table#contributionDetails tr.trorange { background:#fbebe1; }
+	table#contributionDetails tr.trdblue { background:#d8e4ef; }
+	table#contributionDetails tr.trblue { background:#e9eef3; }
+table#contributionDetails th { background:#fbefe7; text-align: center; text-transform: uppercase; font-size:10px; line-height:1.4; padding:10px; vertical-align: middle; border-bottom:dashed 1px #b9b4b1; }
+table#contributionDetails td { text-align: center; font-size:13px; padding:10px; border-bottom:dashed 1px #b9b4b1; }
+
+
+
+/* HELP ME CHOOSE: INTRO (help-me-choose-intro.html)
+----------------------------------- */
+.helpMeChoose { margin:50px 0; text-align:center; }
+.helpMeChoose img { -webkit-box-shadow: 0px 0px 20px 5px #cbcccd; box-shadow: 0px 0px 20px 5px #cbcccd; }
+
+/* HELP ME CHOOSE: PLAN SUGGESTIONS (help-me-choose-plan-suggestions.html)
+----------------------------------- */
+
+#mainContent ul#planSuggestion { margin:0 0 30px; float:left; font-size:11px; }
+#mainContent ul#planSuggestion li { border-left:dashed 1px #b9b4b1; margin:0; float:left; width:227px; }
+#mainContent ul#planSuggestion * li { border-left:none; float:none; width:inherit; }
+#mainContent ul#planSuggestion li .optionTop, #mainContent ul#planSuggestion li .optionDeductible, #mainContent ul#planSuggestion li .optionOutofPocket, #mainContent ul#planSuggestion li .optionAbout { padding:10px; border-bottom:dashed 1px #b9b4b1; }
+	#mainContent ul#planSuggestion li .optionDeductible { background:#fbebe0; }
+	#mainContent ul#planSuggestion li .optionAbout p { margin:0; line-height:1.6; }
+
+#mainContent ul#planSuggestion li .planTitle { font-size:18px; text-transform: none; line-height:1.4; margin:0 0 10px; }
+#mainContent ul#planSuggestion li .planPremium { font-size:12px; text-transform: uppercase; }
+
+	
+#mainContent ul#planSuggestion li .planOption { color:#fff; padding:7px; font-size:12px; }
+	li.orangeSuggestion .planOption { background:#f0ad77; }
+	li.blueSuggestion .planOption { background:#b0cbe2; }
+	li.graySuggestion .planOption { background:#b2b5b9; }
+	
+#mainContent ul#planSuggestion li .planDetails { text-align:right; font-size:14px; }
+#mainContent ul#planSuggestion li .planDetails a { text-decoration: none; }
+	li.orangeSuggestion .planDetails a { color:#f0ad77; }
+	li.blueSuggestion .planDetails a { color:#b0cbe2; }
+	li.graySuggestion .planDetails a { color:#b2b5b9; }	
+#mainContent ul#planSuggestion li .planDetails a img { position:relative; top:3px; }
+	
+#mainContent ul#planSuggestion li .suggestionBox { }
+	li.orangeSuggestion .suggestionBox { background:#fbf2ed; }
+	li.blueSuggestion .suggestionBox { background:#e9eef3; }
+	li.graySuggestion .suggestionBox { background:#eeeded; }
+#mainContent ul#planSuggestion li .suggestionBox h6 { text-transform: uppercase; font-family: "Avenir Medium", Helvetica, Arial, sans-serif; font-size:10px; padding:3px 7px; }
+	li.orangeSuggestion .suggestionBox h6 { background:#fce5d5; }
+	li.blueSuggestion .suggestionBox h6 { background:#d5e1ee; }
+	li.graySuggestion .suggestionBox h6 { background:#e0dfe0; }
+#mainContent ul#planSuggestion li .suggestionBox p { margin:0; line-height:1.6; padding:10px 7px; }
+#mainContent ul#planSuggestion li .suggestionBox ul { margin:10px 0; }
+#mainContent ul#planSuggestion li .suggestionBox ul li { padding:0 7px; }
+#mainContent ul#planSuggestion li .suggestionBox img { padding:7px; }
+
+
+/* MODAL BOXES 
+----------------------------------- */
+.modal { width:570px; padding:15px; margin:0 auto; background:#bed5e7; border:5px solid #f4b685; -webkit-box-shadow: 0px 0px 15px 5px #666; box-shadow: 0px 0px 15px 5px #666; -webkit-border-radius: 5px; border-radius: 5px; }
+
+#mainContent .modal { position:absolute; top:80px; z-index:100; }
+
+.closeModal { width:17px; height:17px; float:right; margin:0 0 10px; display:block; }
+.modal h3 { font-family: 'Gotham Medium'; font-size:25px; color:#7babd3; line-height:normal; }
+	.modal h3.center { text-align:center; }
+	.modal h3.white { color:#fff; }
+	.modal h3 small { font-size:18px !important; }
+.modal p { color:#fff; font-size:18px; margin-top:20px; }
+	.modal p span.orange { color:#efa86e !important; }
+ul#modalButtons { clear:both; margin:0; padding-top:20px; border-top: dashed 1px #617eb4; }
+ul#modalButtons li { float:left; margin:0 180px 0 0; }
+	ul#modalButtons li.last { margin:0; }
+ul#modalButtons a.button { background: #86b2d5; /* Old browsers */
+background: -moz-linear-gradient(top,  #86b2d5 0%, #abc7df 50%, #86b2d5 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#86b2d5), color-stop(50%,#abc7df), color-stop(100%,#86b2d5)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #86b2d5 0%,#abc7df 50%,#86b2d5 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #86b2d5 0%,#abc7df 50%,#86b2d5 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #86b2d5 0%,#abc7df 50%,#86b2d5 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #86b2d5 0%,#abc7df 50%,#86b2d5 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#86b2d5', endColorstr='#86b2d5',GradientType=0 ); /* IE6-9 */
+color:#fff;
+border:none;
+ }
+.modal .icon { clear:both; float:right; margin:0 0 20px 20px; }
+.modal ul.col2, .modal ul.col3 { margin:20px auto; width:402px; padding-top:20px; /*border-top: dashed 1px #617eb4;*/ }
+	.modal ul.col3 { width:513px; border-top:none; }
+.modal ul.col2 li, .modal ul.col3 li { float:left; width:160px; padding:0 20px;  text-align:center; color:#fff; font-size:18px; border-right:dashed 1px #617eb4; }
+	.modal ul.col3 li { width:130px; }
+.modal ul.col2 li.last, .modal ul.col3 li.last { border-right:none; }
+.modal ul.col2 li a, .modal ul.col3 li a { color:#fff; text-decoration: none; }
+.modal ul.col2 li img, .modal ul.col3 li img { margin-bottom:10px;  }
+
+
+
 /* FOOTER
 ----------------------------------- */
 #footer{ width:100%; background:#7aabd0; text-align: center; padding:20px 0; color:#fff; }
@@ -587,6 +710,14 @@ table#savedapplicationstable td { text-align: center; font-size:13px; padding:10
 	font-family: 'Avenir Medium';
 	src: url('fonts/AvenirLTStd-Medium.eot');
 	src: local('☺'), url('fonts/AvenirLTStd-Medium.woff') format('woff'), url('fonts/AvenirLTStd-Medium.ttf') format('truetype'), url('fonts/AvenirLTStd-Medium.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gotham Medium';
+	src: url('fonts/gotham-medium-webfont.eot');
+	src: local('☺'), url('fonts/gotham-medium-webfont.woff') format('woff'), url('fonts/gotham-medium-webfont.ttf') format('truetype'), url('fonts/gotham-medium-webfont.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
